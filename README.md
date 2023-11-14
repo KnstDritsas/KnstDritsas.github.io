@@ -4,7 +4,7 @@
 
 ▶️ This is the repository for my personal website. It showcases my portfolio and other information about me.
 
-🟢 Visit the live site: 
+🟢 Visit the live site: https://knstdritsas.github.io/index.html 
 
 ## Technologies Used
 
