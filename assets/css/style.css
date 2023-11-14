@@ -1,0 +1,120 @@
+  /* Define a color */
+  .yellow {
+    color:#fdd85d
+  }
+
+  .front {
+    color: #eff7f6 
+  }
+
+  .project {
+    color: black
+  }
+
+  /* Nav Bar CSS*/
+
+  .navbar-toggler {
+    color: #333;
+    border: none;
+    background-color: transparent;
+    border-radius: 0;
+    outline: none;
+  }
+
+  .navbar-toggler::before {
+    content: "";
+    display: block;
+    width: 28px;
+    height: 2px;
+    background-color: white;
+    margin: 0 auto;
+  }
+  .navbar {
+    background-color: #333; /* A dark gray color */
+  }
+
+  .navbar a {
+    color: white;       /* The color of the links in the nav bar */
+    padding: 14px 16px;   /* The padding around the links */
+    font-size: 16px;      /* The font size of the links */ 
+  }
+
+  .navbar a:hover {
+    background-color: #ddd; /* The background color when hovering over a link */
+    color: black;           /* The color of the link when hovering over it */
+  }
+
+  .navbar a.active {
+    background-color: #ddd; /* The background color of the active link */  
+    color: white;           /* The color of the active link */
+  }
+
+  .navbar .container {
+    display: flex;              /* Use flexbox to align the items in the nav bar */
+    justify-content: center;    /* Center the items horizontally */
+    align-items: center;        /* Center the items vertically */
+    height: 100%;               /* Use the full height of the nav bar */
+  }
+
+
+  /*Qualification CSS*/
+  .qualification-section {
+    padding: 50px 0;                /* Add some padding above and below the section */
+    background-color: #ffffff;    /* Use a white background color for the section */
+  }
+
+  .qualification-title {
+    font-size: 24px;                /* The font size of the title */
+    font-weight: bold;              /* Make the title bold */
+    color: #007bff;               /* Use a blue color for the title */
+  }
+
+  /*Skill Css*/
+
+  .container {
+    margin-top: 20px;               /* Add some margin above the container */
+  }
+  
+  h2 {
+    text-align: center;             /* Center the heading */
+  }
+  
+  h3 {
+    text-align: center;             /* Center the subheading */
+  }
+  
+  .list-group {
+    margin-bottom: 10px;            /* Add some margin below the list group */
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;    
+
+  }
+  
+  .list-group-item {
+    display: flex;            /* Use flexbox to display the list items */
+    align-items: center;      /* Align the items vertically */
+  }
+  
+  .list-group-item i {
+    font-size: 24px;          /* The font size of the icons */
+    margin-right: 10px;       /* Add some margin to the right of the icons */
+  }
+  
+  .progress {
+    height: 10px;         /* The height of the progress bars */
+    margin-left: 10px;    /* Add some margin to the left of the progress bars */
+    flex: 1;              /* Make the progress bars fill the remaining space */
+  }
+  
+  .progress-bar {
+    transition: width 1s ease-in-out; /* Add a smooth transition to the width of the progress bars */
+  }
+  
+  /* Contact Me CSS */
+  .container {
+    margin-top: 50px; /* Add some margin above the container */
+  }
+
+  .btn {
+    font-size: 18px; /* The font size of the button */
+    padding: 10px 20px; /* The padding around the button */
+  }
