@@ -14,11 +14,11 @@
         <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.4.2/css/sharp-light.css" />
 
         <!-- Bootstrap CSS -->
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" 
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
 
         <!-- My CSS -->
-        <link rel="stylesheet" href="assets/css/style.css">
+        <link rel="stylesheet" href="assets/css/styles.css">
 
         <!-- Title -->
         <title>Konstantinos Dritsas | Portfolio</title>
@@ -29,12 +29,13 @@
         <main-header>
           <nav class="navbar navbar-expand-sm">
             <div class="container">
-              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarItems">
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarItems" aria-expanded="false" aria-label="Toggle navigation">
+                <div class="toggler-icon"></div>
               </button>
               <div class="collapse navbar-collapse justify-content-center" id="navbarItems">
                 <ul class="navbar-nav">
                     <li class="nav-item">
-                        <a class="nav-link active" href="MyPortfolio.html">Home</a>
+                        <a class="nav-link active" href="#first-section">Home</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#About">About</a>
@@ -56,86 +57,77 @@
             </div>
           </nav>
         </main-header>
-    <br><br>
-    <!-- First Section (First Page of my Website)-->
-    <section class="first-section">
-        <div class="container-fluid">
-          <div class="row justify-content-center align-items-center">
-            <div class="col-md-6">
-              <div class="intro">
-                <p class="fs-5 text-secondary">Hello!, I am</p>
-                <h1 class="display-2 fw-bolder mb-4"><span>Konstantinos Dritsas</span></h1>
-                <p class="fs-5 mb-5 text-secondary">Undergraduate student <b>in the Department of Electrical and Computer Engineering</b> at the University of Peloponnese.</p>
-                <a href="#About" class="btn btn-outline-primary">
-                    <i class="fa-sharp fa-solid fa-chevrons-down"></i> Know More <i class="fa-sharp fa-solid fa-chevrons-down"></i>
-                </a>
-              </div>
-            </div>
-            <div class="col-12 col-lg-5 text-center">
-              <img src="assets/img/1.png" alt="Logo" class="circle-image" onmouseover="this.src='assets/img/2.png';" onmouseout="this.src='assets/img/1.png';" style="border-radius: 50%;align-items: center;justify-content: center;overflow: hidden;margin-bottom:0.5cm;margin-top:0.5cm;" width="50%">
-            </div>
-          </div>
+
+<!-- First Section -->
+<section class="first-section">
+  <div class="container-fluid">
+    <div class="row justify-content-center align-items-center">
+      <div class="col-md-6">
+        <div class="intro">
+          <p class="fs-5 ">Hello!, I am</p>
+          <h1 class="display-2 fw-bolder mb-4"><span></span></h1>
+
+          <p class="fs-5 mb-5">Undergraduate student <b class="yellow">in the Department of Electrical and Computer Engineering</b> at the University of Peloponnese.</p>
+          <!-- Updated Know More Button -->
+          <a href="#About" class="btn btn-know-more">
+            <i class="fa-sharp fa-solid fa-chevron-down"></i> Know More <i class="fa-sharp fa-solid fa-chevron-down"></i>
+          </a>
         </div>
-      </section>
+      </div>
+      <!-- Image Column -->
+      <div class="col-12 col-lg-5 text-center">
+        <img src="assets/img/1.png" alt="Konstantinos Dritsas" class="circle-image" width="50%">
+      </div>
+    </div>
+  </div>
+</section>
 
-    <br><br>
-    <div class="container-fluid bg-dark text-white p-3"></div>
-
-    <!-- Second Section (ABOUT ME)-->
-    <section class="container-fluid bg-dark text-white p-5" id="About">
+    <!-- Second Section (About me)-->
+    <section class="container-fluid text-white p-5" id="About">
         <div class="row justify-content-center">
         <h2 class="display-4">About me</h2>
-        <h3 class="lead">Η εισαγωγή μου</h3>
-        <div class="container-fluid bg-dark p-3"></div>
+        <h3 class="lead">My introduction</h3>
+        <div class="container-fluid  p-3"></div>
           <div class="col-md-8">
             <p class="text-justify">
-              <br>
-                Είμαι 4ο ετής φοιτητής στο τμήμα ΗΜΜΥ στο Πανεπιστήμιο Πελοποννήσου.
-                Μου αρέσει η επίλυση προβλημάτων και ο Προγραμματισμός. Προσπαθώ πάντα να δίνω το <b class="yellow">100%</b> στη δουλειά που κάνω.
-                Έχω δουλέψει έως τώρα με τις εξής γλώσσες ερασιτεχνικά: <b class="yellow">Python</b>, <b class="yellow">JavaScript</b>, <b class="yellow">SQLite</b>, <b class="yellow">MongoDB</b>, <b class="yellow">HTML5</b>, <b class="yellow">CSS</b>, <b class="yellow">Java</b> και
-                <b class="yellow">C++</b> καθόλη την διάρκεια των σπουδών μου.</p>
-                </div> 
+              I am a fourth-year student in the ECE department at the University of Peloponnese. I enjoy problem-solving and programming. I always strive to give my <b class="yellow">100%</b> in the work I do. So far, I have worked with the following languages: <b class="yellow">Python</b>, <b class="yellow">JavaScript</b>, <b class="yellow">SQLite</b>, <b class="yellow">MongoDB</b>, <b class="yellow">HTML5</b>, <b class="yellow">CSS</b>, <b class="yellow">Java</b>, and <b class="yellow">C++</b> throughout my studies.</p>
+                </div>
               </div>
             </section>
 
-    <div class="container-fluid bg-dark text-white p-5"></div>
 
     <!-- Third Section (Qualification)-->
     <section class="container-fluid bg-white text-black p-5" id="Qualification">
         <div class="row justify-content-center">
         <h2 class="display-4">Qualification</h2>
-        <h3 class="lead">Η πορεία μου<br></h3>
+        <h3 class="lead">My journey<br></h3>
           <div class="container-fluid bg-white p-3"></div>
             <div class="col-md-8">
-              <h3 class="qualification-title">Τμήμα Ηλεκτρολόγων Μηχανικών και Μηχανικών Υπολογιστών Πανεπιστήμιο Πελοποννήσoυ</h3>
+              <h3 class="qualification-title">Department of Electrical and Computer Engineering of the University of Peloponnese</h3>
               <p class="text-justify">
-                <br>
-                  Ως φοιτητής του τμήματος ΗΜΜΥ του Πανεπιστήμιου Πελοποννήσου, αποκτώ γνώσεις και δεξιότητες σε ένα ευρύ φάσμα επιστήμων και τεχνολογιών, 
-                όπως η ηλεκτρονική, η πληροφορική, η τηλεπικοινωνίες, και η ενέργεια. Μαθαίνω πως να αναλύω, να σχεδιάζω, να υλοποιώ και να εφαρμόζω συστήματα 
-                και λύσεις που βελτιώνουν την ποιότητα ζωής και την κοινωνική ευημερία. Συμμετέχω σε ερευνητικά και εκπαιδευτικά προγράμματα που με εμπλουτίζουν επιστημονικά και ανθρωπιστικά. 
-                Έχω την ευκαιρία να συνεργαστώ με καθηγητές και συνάδελφους από διαφορετικά επίπεδα και πεδία.</p>
+                As a student of the Department of Electrical and Computer Engineering at the University of Peloponnese, I acquire knowledge and skills in a wide range of sciences and technologies, such as electronics, computer science, telecommunications, and energy. I learn how to analyze, design, implement, and apply systems and solutions that enhance quality of life and social welfare. I participate in research and educational programs that enrich me both scientifically and humanistically. I have the opportunity to collaborate with professors and colleagues from different levels and fields.</p>
                 <div class="row">
                   <div class="col-md-4 text-md-left">
                   <p><b><li>Start Date:</b> October, 2020 </p></li>
                 </div>
                   <div class="col-md-4 text-md-left">
-                  <p><b><li>End Date:</b> Σε εξέλιξη ⏳</p></li>
+                  <p><b><li>End Date:</b> In progress ⏳</p></li>
                 </div>
                   <div class="col-md-4 text-md-left">
                   <p><b><li>Location:</b> Patras, Greece</p></li>
                 </div>
               </div>
-              </div> 
               </div>
-          </section>     
+              </div>
+          </section>
 
     <!-- Quarter Section (Skills)-->
-    <section class="container-fluid bg-dark text-white p-5" id="Skills">
+    <section class="container-fluid text-white p-5" id="Skills">
         <div class="row justify-content-center">
         <div class="col-md-8 text-center">
         <h2 class="display-4">Skills</h2>
         <h3 class="lead">Knowledge level: Intermediate Low </h3>
-        <div class="container-fluid bg-dark p-3"></div>
+        <div class="container-fluid  p-3"></div>
         <br>
         <div class="row">
           <div class="col-md-4">
@@ -160,32 +152,29 @@
             <h3 class="front">Other</h3>
             <ul class="list-group">
               <li class="list-group-item"><i class="fa-sharp fa-regular fa-code-branch"></i> Github <div class="progress"><div class="progress-bar bg-success" style="width:15%"></div></div></li>
-              <li class="list-group-item"><i class="fas fa-notebook"></i> Jupyter Notebook <div class="progress"><div class="progress-bar bg-success" style="width:40%"></div></div></li>
+              <li class="list-group-item"><i class="fas fa-notebook"></i> Jupyter Notebook <div class="progress"><div class="progress-bar bg-success" style="width:60%"></div></div></li>
+              <li class="list-group-item"><i class="fas fa-bar-chart"></i> PowerBI <div class="progress"><div class="progress-bar bg-success" style="width:40%"></div></div></li>
             </ul>
           </div>
         </div>
         </div>
         </div>
-      </section> 
+      </section>
 
-    <div class="container-fluid bg-dark text-white p-3"></div>
-
-    <!-- Fifth Section (Project-Use Skills ID)-->
+    <!-- Fifth Section (Projects)-->
     <section class="container-fluid bg-white text-black p-5" id="Projects">
       <div class="row justify-content-center">
       <div class="col-md-8 text-center">
       <h2 class="display-4">Project</h2>
-      <h3 class="lead">Project που ειναι υπο-κατασκευή </h3>
+      <h3 class="lead">In Progress and Completed Projects</h3>
       <div class="container-fluid bg-white p-3"></div>
-      <br>
       <div class="row">
         <div class="col-md-4">
-          <br>
           <ul class="list-group">
-            <li class="list-group-item"><i class="fab fa-python"></i> Personal Voice Assistant [Assist]</li>
-            <li class="list-group-item"><b>Μερικές βασικές πληροφορίες:</b></li>
-            <li class="list-group-item">Project τοu IEEE SB UOP-Patras, σχετικά με την δημιουργία ενός φωνητικού βοηθου.</li>
-            <li class="list-group-item"><i class="fa-regular fa-bars-progress"></i>Progress<div class="progress"><div class="progress-bar bg-primary" style="width:20%"></div></div></li>
+            <li class="list-group-item"><i class="fab fa-python"></i> Personal Voice Assistant</li>
+            <li class="list-group-item"><b>A Brief Overview:</b></li>
+            <li class="list-group-item">Harnessing Natural Language Processing and AI for Voice Commands, User-friendly Interface, Supported by MongoDB for Efficient Data Management.</li>
+            <li class="list-group-item"><i class="fa-regular fa-bars-progress"></i>Progress<div class="progress"><div class="progress-bar bg-primary" style="width:15%"></div></div></li>
             <div>
               <li class="list-group-item"><button type="button" class="btn btn-secondary btn-lg" disabled>Soon</button>
               </li>
@@ -193,11 +182,10 @@
           </ul>
         </div>
         <div class="col-md-4">
-          <br>
           <ul class="list-group">
             <li class="list-group-item"><i class="fa-sharp fa-solid fa-sensor"></i> IoT Generative Music</li>
-            <li class="list-group-item"><b>Μερικές βασικές πληροφορίες:</b></li>
-            <li class="list-group-item">Μουσική από τα Data του καιρού με Rasberry Pi-4, Weather API και MongoDB.
+            <li class="list-group-item"><b>A Brief Overview:</b></li>
+            <li class="list-group-item">Music from Weather Data with Rasberry Pi-4, Weather API and MongoDB.
             </li>
             <li class="list-group-item"><i class="fa-regular fa-bars-progress"></i>Progress<div class="progress"><div class="progress-bar bg-primary" style="width:10%"></div></div></li>
             <div>
@@ -207,12 +195,11 @@
           </ul>
         </div>
         <div class="col-md-4">
-          <br>
           <ul class="list-group">
-            <li class="list-group-item"><i class="fa-solid fa-circle-dot"></i> COVID-19 InsightHub</li>
-            <li class="list-group-item"><b>Μερικές βασικές πληροφορίες:</b></li>
-            <li class="list-group-item">Σύνθεση Δεδομένων και Οπτικοποίηση με Χρήση Matlab.</li>
-            <li class="list-group-item"><i class="fa-regular fa-bars-progress"></i>Progress<div class="progress"><div class="progress-bar bg-primary" style="width:30%"></div></div></li>
+            <li class="list-group-item"><i class="fa-solid fa-circle-dot"></i> Crimes in London InsightHub</li>
+            <li class="list-group-item"><b>A Brief Overview:</b></li>
+            <li class="list-group-item">Data Synthesis and Visualisation using PowerBI for Crime in London as well as possible forecasts on the interpretation of data.</li>
+            <li class="list-group-item"><i class="fa-regular fa-bars-progress"></i>Progress<div class="progress"><div class="progress-bar bg-primary" style="width:100%"></div></div></li>
             <div>
               <li class="list-group-item"><button type="button" class="btn btn-secondary btn-lg" disabled>Soon</button>
               </li>
@@ -222,11 +209,67 @@
       </div>
       </div>
       </div>
-    </section> 
-      <br><br>
+    </section>
 
-      <!-- Six Section -->
-      <section class="container-fluid bg-dark text-white p-5" id="Contact">
+<!-- Sixth Section (Volunteering)-->
+<section class="container-fluid p-5" id="Volunteering">
+  <div class="row">
+    <!-- Card 1 -->
+    <h2 class="display-4 text-center">Volunteering</h2>
+    <p class="lead text-center"> A Journey in Volunteering and Organizational Leadership</p>
+    <div class="col-sm-12 col-md-6 col-lg-4 mb-4">
+      <div class="card">
+        <div class="card-header" onclick="toggleCardInfo('volunteerInfo1')">
+          <h2 class="card-title">Department ECE, University of Peloponnese</h2>
+        </div>
+        <div class="card-body" id="volunteerInfo1" style="display: none;">
+          <p>🤝 Supported the coordination and execution of various events, promoting academic and professional development within the engineering community: The Freshers’ Welcome Ceremony, Researcher’s Day and Career Day
+          <p><strong>Date:</strong> [2021-2024]</p>
+          <p>💚Contributed as an active member of the IEEE, collaborating in organizing the following event: 3rd Summer School: "Smart Cities: Intelligent Systems Technologies and Services"</p>
+            <p><strong>Date:</strong> [2021-2022]</p>
+        </div>
+      </div>
+    </div>
+    <!-- Card 2 -->
+    <div class="col-sm-12 col-md-6 col-lg-4 mb-4">
+      <div class="card">
+        <div class="card-header" onclick="toggleCardInfo('volunteerInfo2')">
+          <h2 class="card-title">IEEE SB University of Peloponnese-Patras</h2>
+        </div>
+        <div class="card-body" id="volunteerInfo2" style="display: none;">
+          <p>My Journey with IEEE Student Branch</p>
+          <p><strong>Date:</strong> May 2022 - Nov 2022</p>
+          <p>During this period, as a founding member of the IEEE Student Branch at the University of Peloponnese-Patras, I played a pivotal role in establishing the organizational structure and promoting awareness of our activities. Together with fellow members, I contributed to drafting the branch constitution and creating promotional content. We organized meetings to engage with members, voted on the articles of the constitution, and conducted team bonding activities to foster a sense of community.</p>
+          <p><strong>Date:</strong> Nov 2022 - Present: Vice Chair</p>
+          <p>As Vice Chair of the IEEE Student Branch, I have focused on enhancing our online presence and organizational efficiency. One of my key contributions was creating the branch website, improving accessibility and engagement. Additionally, I've continued to organize meetings and activities to promote IEEE within the university and wider community, emphasizing the benefits of IEEE membership.</p>
+          <p><strong>Date:</strong> May 2023 - Present: Organizer of the 1st Summer School on Artificial Intelligence and Machine Learning</p>
+          <p>In May 2023, I organized the inaugural Summer School on Artificial Intelligence and Machine Learning at the University of Peloponnese. Over the course of three days, participants gained valuable insights from esteemed speakers and engaged in practical sessions to deepen their understanding of AI and ML. My responsibilities included planning the program, coordinating with the university's Department of Electrical and Computer Engineering, inviting speakers, managing logistics, and evaluating feedback to ensure the success of the event.</p>
+          <p><strong>Date:</strong> May 2024 - Present: Organizer of the 2st Summer School: Tech Revolutions</p>
+          <p>Soon More Info About my Actions</p>
+
+
+          <p><strong>Project:</strong> IEEE Student Branch University of Peloponnese Non-Profit Website</p>
+          <p><strong>Project:</strong> Summer School 2024 Non-profit Event Website</p>
+        </div>
+      </div>
+    </div>
+    <!-- Card 3 -->
+    <div class="col-sm-12 col-md-6 col-lg-4 mb-4">
+      <div class="card">
+        <div class="card-header" onclick="toggleCardInfo('volunteerInfo3')">
+          <h2 class="card-title">IEEE Puzzlers</h2>
+        </div>
+        <div class="card-body" id="volunteerInfo3" style="display: none;">
+          <p><strong>Date:</strong> August 2023 - Present: Contributing to the IEEE Puzzlers Group</p>
+          <p>Since August 2023, I've been an active member of the IEEE Puzzlers Group, engaging in puzzle-solving and ensuring a seamless experience for our members. Alongside solving puzzles, I take on the responsibility of monitoring the puzzle-solving process. Any issues I encounter are promptly reported to the central team for resolution. This proactive approach guarantees that puzzles run smoothly and any potential problems are swiftly addressed. Consequently, our members can enjoy a seamless puzzle-solving experience.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+      <!-- Seventh Section (Footer)-->
+      <section class="container-fluid text-white p-5" id="Contact">
         <div class="row">
           <div class="col-lg-6 col-md-8 mx-auto">
             <h2 class="display-4">Contact Me</h2>
@@ -241,10 +284,10 @@
           <p class="text-center">© 2023 Konstantinos Dritsas. All rights reserved.</p>
           <p class="text-center">It was made in the context of practicing the content of the course about:</p>
           <b class="text-center">Web Technologies and Applications ECE_INF750</b>
-      </section>    
-      
+      </section>
+
+      <script src="assets/script.js"></script>
       <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
 
     </body>
 </html>
-      
