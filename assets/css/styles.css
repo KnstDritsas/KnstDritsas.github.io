@@ -1,0 +1,621 @@
+  /* Define a color */
+  .yellow {
+    color:#fdd85d
+  }
+
+  .front {
+    color: #eff7f6
+  }
+
+  .project {
+    color: black
+  }
+
+/* Navigation Bar Styles */
+.navbar {
+  background-color: #343a40;
+  padding: 0.5rem 1rem;
+}
+
+.navbar-toggler {
+  padding: 0.25rem 0.5rem;
+  border: none;
+  background: none;
+  outline: none;
+  position: relative;
+  width: 40px;
+  height: 25px;
+  cursor: pointer;
+}
+
+.toggler-icon,
+.toggler-icon::before,
+.toggler-icon::after {
+  content: '';
+  display: block;
+  background-color: #fff;
+  height: 3px;
+  width: 100%;
+  border-radius: 3px;
+  transition: all 0.3s ease-in-out;
+}
+
+.toggler-icon::before {
+  transform: translateY(-8px);
+}
+
+.toggler-icon::after {
+  transform: translateY(8px);
+}
+
+/* Toggler animation */
+.navbar-toggler:not(.collapsed) .toggler-icon {
+  background: transparent;
+}
+
+.navbar-toggler:not(.collapsed) .toggler-icon::before {
+  transform: rotate(45deg) translate(5px, 5px);
+}
+
+.navbar-toggler:not(.collapsed) .toggler-icon::after {
+  transform: rotate(-45deg) translate(7px, -7px);
+}
+
+.navbar-toggler:focus,
+.navbar-toggler:active {
+  outline: none;
+  box-shadow: none;
+}
+
+.navbar .navbar-nav .nav-item .nav-link {
+  color: #ffffff;
+  margin: 0 1rem;
+  transition: color 0.3s ease-in-out;
+}
+
+.navbar .navbar-nav .nav-item .nav-link:hover,
+.navbar .navbar-nav .nav-item .nav-link:focus {
+  color: #17a2b8;
+  text-decoration: none;
+}
+
+.navbar .navbar-nav .nav-item .nav-link.active {
+  color: #ffc107;
+  font-weight: bold; 
+}
+
+/* Responsive Design */
+@media (max-width: 992px) {
+  .navbar-expand-lg .navbar-toggler {
+    display: block;
+  }
+
+  .navbar-expand-lg .navbar-collapse {
+    display: none;
+  }
+
+  .navbar-expand-lg .navbar-collapse.collapsing {
+    display: none;
+  }
+
+  .navbar-expand-lg .navbar-collapse.show {
+    display: block;
+  }
+
+  .navbar-nav .nav-link {
+    padding-right: .5rem;
+    padding-left: .5rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .navbar .navbar-collapse {
+    text-align: center; /* Center align nav items on smaller screens */
+  }
+
+  .navbar .navbar-nav {
+    flex-direction: column; /* Stack nav items vertically on smaller screens */
+  }
+
+  .navbar .navbar-nav .nav-item {
+    margin-bottom: 0.5rem; /* Add space between nav items on smaller screens */
+  }
+}
+
+
+
+
+  .first-section {
+    background-color: #343a40; /* Dark background for the first section */
+    color: #ffffff; /* White text for better readability */
+  }
+
+  .first-section .container-fluid {
+    padding: 2% 15%; /* Padding for the container */
+  }
+
+  .first-section .row {
+    min-height: 100vh; /* Full height row */
+    align-items: center; /* Vertically center the content */
+  }
+
+  .first-section .intro {
+    text-align: left; /* Align intro text to the left */
+  }
+
+  .first-section p.fs-5 {
+    color: #ffffff; /* White text for better readability */
+  }
+
+  .first-section h1.display-2 {
+    color: #ffffff; /* White color for the heading */
+    font-weight: 700; /* Bold font weight for the heading */
+  }
+
+  .first-section a.btn-know-more {
+    color: #fff; /* White text color */
+    background-color: #17a2b8; /* Bootstrap's info blue as background color */
+    border: 2px solid #17a2b8; /* Same color border */
+    padding: 0.5rem 1rem; /* Padding for a larger button */
+    font-size: 1.2rem; /* Larger font size */
+    border-radius: 0.3rem; /* Slightly rounded corners */
+    transition: all 0.3s ease-in-out; /* Smooth transition for hover effects */
+  }
+
+  .first-section a.btn-know-more:hover, .first-section a.btn-know-more:focus {
+    background-color: #138496; /* Darker shade of blue on hover/focus */
+    border-color: #117a8b; /* Darker border color on hover/focus */
+    color: #d1ecf1; /* Light blue text color on hover/focus */
+    text-decoration: none; /* Remove underline on hover/focus */
+    transform: scale(1.05); /* Slightly increase the size on hover/focus */
+  }
+
+  /* Image Styles */
+  .circle-image {
+    border-radius: 50%; /* Circular image */
+    align-items: center; /* Center align image */
+    justify-content: center; /* Center justify image */
+    overflow: hidden; /* Hide overflow */
+    margin-bottom: 0.5cm; /* Bottom margin */
+    margin-top: 0.5cm; /* Top margin */
+  }
+
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .first-section .intro {
+      text-align: center; /* Center align intro text on smaller screens */
+    }
+    .first-section .circle-image {
+      width: 70%; /* Smaller image on smaller screens */
+      margin-bottom: 1rem; /* Increase bottom margin on smaller screens */
+    }
+  }
+
+/* About Me Section Styles */
+#About {
+  background-color: #343a40; /* Dark background for the about me section */
+  color: #ffffff; /* White text for better readability */
+}
+
+#About .display-4, #About .lead {
+  text-align: center; /* Center align the titles */
+  margin-bottom: 1rem; /* Spacing below titles */
+}
+
+#About p.text-justify {
+  text-align: justify; /* Justify align paragraphs for a neat look */
+  line-height: 1.6; /* Line height for better readability */
+}
+
+#About .yellow {
+  color: #ffc107; /* Yellow color for highlighted text */
+  font-weight: bold; /* Bold font for highlighted text */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  #About .col-md-8 {
+    text-align: center; /* Center align text on smaller screens */
+  }
+}
+
+
+
+
+
+
+/* About Me Section Styles */
+#About {
+  background-color: #343a40; /* Dark background for the about me section */
+  color: #ffffff; /* White text for better readability */
+}
+
+#About .display-4, #About .lead {
+  text-align: center; /* Center align the titles */
+  margin-bottom: 1rem; /* Spacing below titles */
+  color: #ffffff; /* White text for headers */
+}
+
+#About p.text-justify {
+  text-align: justify; /* Justify align paragraphs for a neat look */
+  line-height: 1.6; /* Line height for better readability */
+}
+
+#About .yellow {
+  color: #ffc107; /* Yellow color for highlighted text */
+  font-weight: bold; /* Bold font for highlighted text */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  #About .col-md-8 {
+    text-align: center; /* Center align text on smaller screens */
+  }
+}
+
+
+/* Qualification Section Styles */
+#Qualification {
+  background-color: #ffffff; /* White background for the qualification section */
+  color: #212529; /* Dark text for better readability */
+}
+
+#Qualification .display-4, #Qualification .lead {
+  text-align: center; /* Center align the titles */
+  margin-bottom: 1rem; /* Spacing below titles */
+}
+
+#Qualification .qualification-title {
+  font-weight: bold; /* Bold font for the qualification title */
+  margin-bottom: 1rem; /* Spacing below the qualification title */
+}
+
+#Qualification p.text-justify {
+  text-align: justify; /* Justify align paragraphs for a neat look */
+}
+
+#Qualification .row > div {
+  margin-bottom: 1rem; /* Spacing between rows */
+}
+
+#Qualification li {
+  list-style-type: none; /* Remove bullet points from list */
+}
+
+#Qualification .col-md-4 p {
+  font-size: 1em; /* Font size for the paragraphs */
+  color: #495057; /* Slightly darker text for the details */
+}
+
+#Qualification .col-md-4 p b {
+  font-weight: bold; /* Bold font for the 'Start Date', 'End Date', and 'Location' */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  #Qualification .col-md-4 {
+    text-align: center; /* Center align text on smaller screens */
+  }
+}
+
+  /*Skill Css*/
+
+ /* Skills Section Styles */
+#Skills {
+  background-color: #343a40; /* Dark background for the skills section */
+  color: #ffffff; /* White text for better contrast */
+}
+
+#Skills h2.display-4, #Skills h3.lead {
+  color: #ffffff; /* White text for headers */
+}
+
+#Skills .front {
+  color: #f8f9fa; /* Lighter text color for sub-headers */
+  margin-bottom: 1rem; /* Spacing below sub-headers */
+}
+
+#Skills .list-group-item {
+  background-color: #495057; /* Darker background for list items */
+  color: #f8f9fa; /* Lighter text color for list items */
+  border: none; /* Remove borders from list items */
+}
+
+#Skills .progress {
+  background-color: #6c757d; /* Dark background for progress bars */
+  border-radius: 0.25rem; /* Rounded corners for progress bars */
+}
+
+#Skills .progress-bar {
+  background-color: #28a745; /* Default green color for progress bars */
+  transition: width 1s ease-in-out; /* Smooth transition for progress bar animation */
+}
+
+/* Specific progress-bar colors */
+#Skills .progress-bar.bg-success {
+  background-color: #28a745; /* Green for success/skill proficiency */
+}
+
+#Skills .progress-bar.bg-info {
+  background-color: #17a2b8; /* Blue for info/medium skill level */
+}
+
+#Skills .progress-bar.bg-warning {
+  background-color: #ffc107; /* Yellow for warning/learning skill level */
+}
+
+#Skills .progress-bar.bg-primary {
+  background-color: #007bff; /* Blue for primary/high skill level */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  #Skills .col-md-4 {
+    margin-bottom: 1rem; /* Spacing between columns on smaller screens */
+  }
+}
+
+
+  /* Contact Me CSS */
+/* Footer Styles */
+#Contact {
+  background-color: #343a40; /* Dark background for the footer */
+  color: #ffffff; /* White text for better readability */
+  padding: 3rem 0; /* Padding for the footer */
+}
+
+#Contact h2.display-4 {
+  text-align: center; /* Center align the title */
+  margin-bottom: 1rem; /* Spacing below the title */
+  color: #ffffff; /* White text for headers */
+}
+
+#Contact p {
+  text-align: center; /* Center align paragraphs */
+  margin-bottom: 1rem; /* Spacing below paragraphs */
+}
+
+#Contact .btn {
+  margin: 0.5rem; /* Margin around buttons */
+  border-width: 2px; /* Thicker border for buttons */
+  transition: all 0.3s ease-in-out; /* Smooth transition for hover effects */
+}
+
+#Contact .btn:hover {
+  transform: translateY(-3px); /* Slightly raise the button on hover */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow effect on hover */
+}
+
+#Contact .btn-outline-primary {
+  color: #007bff; /* Blue text color for email button */
+  border-color: #007bff; /* Blue border color for email button */
+}
+
+#Contact .btn-outline-info {
+  color: #17a2b8; /* Light blue text color for LinkedIn button */
+  border-color: #17a2b8; /* Light blue border color for LinkedIn button */
+}
+
+#Contact .btn-outline-light {
+  color: #f8f9fa; /* Light text color for GitHub button */
+  border-color: #f8f9fa; /* Light border color for GitHub button */
+}
+
+#Contact .text-center {
+  font-size: 0.9rem; /* Smaller font size for centered text */
+}
+
+#Contact b {
+  display: block; /* Block display for bold text */
+  margin-top: 1rem; /* Spacing above the bold text */
+  font-size: 1rem; /* Font size for bold text */
+  color: #ffc107; /* Yellow color for bold text */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  #Contact {
+    padding: 2rem 1rem; /* Smaller padding on smaller screens */
+  }
+
+  #Contact h2.display-4 {
+    font-size: 2.5rem; /* Smaller font size for title on smaller screens */
+  }
+
+  #Contact .btn {
+    margin: 0.3rem; /* Smaller margin around buttons on smaller screens */
+  }
+}
+
+
+  /* Project Section */
+/* Navigation & Section Headers */
+.container-fluid {
+  padding: 3% 15%;
+}
+
+h2.display-4, h3.lead {
+  color: #333;
+  margin-bottom: 1rem;
+}
+
+/* Project Section */
+#Projects {
+  background-color: #fff;
+  color: #333;
+}
+
+.list-group-item {
+  background-color: #f9f9f9;
+  border: 1px solid #ddd;
+  margin-bottom: 5px;
+  padding: 20px;
+  font-size: 1.1em;
+}
+
+.list-group-item i {
+  margin-right: 10px;
+}
+
+.progress {
+  height: 20px;
+}
+
+.progress-bar {
+  width: 0;
+  background-color: #007bff;
+  transition: width 2s;
+}
+
+/* Buttons */
+.btn-secondary {
+  background-color: #6c757d;
+  border: none;
+  color: white;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 1em;
+  margin: 4px 2px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+}
+
+.btn-secondary:hover {
+  background-color: #5a6268;
+  color: white;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .container-fluid {
+    padding: 3%;
+  }
+
+  .list-group-item {
+    padding: 10px;
+    font-size: 0.9em;
+  }
+}
+
+/* Volunteering and Certifications Sections Styles */
+/* Volunteering Section Styles */
+#Volunteering .card {
+  margin: 1rem;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  transition: box-shadow 0.3s ease-in-out;
+}
+
+#Volunteering .card:hover {
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+#Volunteering .card-header {
+  background-color: #343a40;
+  color: white;
+  cursor: pointer;
+  padding: 1rem;
+}
+
+#Volunteering .card-header h2 {
+  margin: 0;
+}
+
+#Volunteering .card-body {
+  padding: 1rem;
+  background-color: #f8f9fa;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  #Volunteering .card {
+    margin: 0.5rem;
+  }
+}
+
+
+/* Certifications Section Styles */
+#Certifications {
+  text-align: center;
+  padding: 2rem;
+}
+
+/* Certifications Section Styles */
+#Certifications {
+  text-align: center;
+  padding: 2rem;
+}
+
+/* Flip Card Styles */
+.flip-card {
+  background-color: transparent;
+  width: 100%;
+  max-width: 300px;
+  height: 200px;
+  perspective: 1000px;
+  margin: auto;
+}
+
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+}
+
+.flip-card.flipped .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+.flip-card-front, .flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+}
+
+.flip-card-front {
+  background-color: #333;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.flip-card-back {
+  background-color: #f8f9fa;
+  color: black;
+  transform: rotateY(180deg);
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .flip-card {
+    width: 90%;
+    height: auto;
+  }
+}
+
+
+
+.display-2 span::after {
+  content: '|';
+  display: inline-block;
+  margin-left: 3px;
+  animation: blink 1s step-start infinite;
+}
+
+@keyframes blink {
+  50% {
+    opacity: 0;
+  }
+}
+
+.typing-cursor::after {
+  animation: none;
+}
