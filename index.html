@@ -2,8 +2,10 @@
   <html lang="en">
     <head>
         <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta name="author" content="Konstantinos Dritsas | https://github.com/KnstDritsas">
+        <meta name="description" content="Portfolio of Konstantinos Dritsas: Project Management Intern and ECE undergraduate with expertise in programming, AI, and volunteering.">
+        <meta name="keywords" content="Konstantinos Dritsas, Portfolio, Project Management, Electrical and Computer Engineering, AI, Cybersecurity, Python, HTML, CSS">
 
         <link rel="icon" type="image/png" sizes="16x16" href="assets/img/favicon.png">
 
@@ -21,53 +23,76 @@
         <link rel="stylesheet" href="assets/css/styles.css">
 
         <!-- Title -->
-        <title>Konstantinos Dritsas | Portfolio</title>
+        <title>Konstantinos Dritsas | Showcase</title>
     </head>
 
     <!-- Navbar -->
     <body>
-        <main-header>
-          <nav class="navbar navbar-expand-sm">
-            <div class="container">
-              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarItems" aria-expanded="false" aria-label="Toggle navigation">
-                <div class="toggler-icon"></div>
-              </button>
-              <div class="collapse navbar-collapse justify-content-center" id="navbarItems">
-                <ul class="navbar-nav">
-                    <li class="nav-item">
-                        <a class="nav-link active" href="#first-section">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#About">About</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#Qualification">Qualification</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#Skills">Skills</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#Projects">Projects</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#Contact">Contact</a>
-                    </li>
-                </ul>
-              </div>
+      <header>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark shadow-sm" role="navigation" aria-label="Main Navigation">
+          <div class="container-fluid px-4">
+            <!-- Brand / Name -->
+            <a class="navbar-brand fw-bold text-warning" href="#first-section">Knstdritsas</a>
+
+            <!-- Toggler Button for Mobile -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarItems"
+              aria-controls="navbarItems" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <!-- Navbar collapse -->
+            <div class="collapse navbar-collapse justify-content-center" id="navbarItems">
+              <ul class="navbar-nav gap-3">
+                <li class="nav-item"><a class="nav-link" href="#first-section">Welcome</a></li>
+                <li class="nav-item"><a class="nav-link" href="#About">About</a></li>
+                <li class="nav-item"><a class="nav-link" href="#Qualification">Qualification</a></li>
+                <li class="nav-item"><a class="nav-link" href="#Skills">Skills</a></li>
+                <li class="nav-item"><a class="nav-link" href="#Projects">What I’ve Built</a></li>
+                <li class="nav-item"><a class="nav-link" href="#WorkExperience">Work Experience</a></li>
+                <li class="nav-item"><a class="nav-link" href="#Volunteering">Volunteering</a></li>
+                <li class="nav-item"><a class="nav-link" href="#Contact">Let’s Connect</a></li>
+
+                <!-- LinkedIn Button ONLY FOR MOBILE -->
+                <li class="nav-item d-lg-none">
+                  <a href="https://www.linkedin.com/in/konstantinos-dritsas-501b57237/"
+                     class="btn btn-linkedin mx-auto mt-2"
+                     target="_blank"
+                     rel="noopener noreferrer"
+                     aria-label="Visit my LinkedIn profile"
+                     title="Visit my LinkedIn">
+                    <i class="fab fa-linkedin-in"></i>
+                  </a>
+                </li>
+              </ul>
             </div>
-          </nav>
-        </main-header>
+
+            <!-- LinkedIn Button ONLY FOR DESKTOP -->
+            <a href="https://www.linkedin.com/in/konstantinos-dritsas-501b57237/"
+                class="btn btn-linkedin d-none d-lg-flex ms-3"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Visit my LinkedIn profile"
+                title="Visit my LinkedIn">
+              <i class="fab fa-linkedin-in"></i>
+            </a>
+          </div>
+        </nav>
+      </header>
+
+      <div id="scrollProgress"></div>
 
 <!-- First Section -->
 <section class="first-section">
+  <div class="sparkles-container"></div>
   <div class="container-fluid">
     <div class="row justify-content-center align-items-center">
       <div class="col-md-6">
         <div class="intro">
           <p class="fs-5 ">Hello!, I am</p>
-          <h1 class="display-2 fw-bolder mb-4"><span></span></h1>
-
-          <p class="fs-5 mb-5">Undergraduate student <b class="yellow">in the Department of Electrical and Computer Engineering</b> at the University of Peloponnese.</p>
+          <h1 class="display-2 fw-bolder mb-4">
+            <span id="typed-dynamic"></span>
+          </h1>
+          <p class="fs-5 mb-5">a Project Management at PwC Greece and an Undergraduate student <b class="yellow">in the Department of Electrical and Computer Engineering</b> at the University of Peloponnese.</p>
           <!-- Updated Know More Button -->
           <a href="#About" class="btn btn-know-more">
             <i class="fa-sharp fa-solid fa-chevron-down"></i> Know More <i class="fa-sharp fa-solid fa-chevron-down"></i>
@@ -80,197 +105,353 @@
       </div>
     </div>
   </div>
+
 </section>
 
-    <!-- Second Section (About me)-->
-    <section class="container-fluid text-white p-5" id="About">
-        <div class="row justify-content-center">
-        <h2 class="display-4">About me</h2>
-        <h3 class="lead">My introduction</h3>
-        <div class="container-fluid  p-3"></div>
-          <div class="col-md-8">
-            <p class="text-justify">
-              I am a fourth-year student in the ECE department at the University of Peloponnese. I enjoy problem-solving and programming. I always strive to give my <b class="yellow">100%</b> in the work I do. So far, I have worked with the following languages: <b class="yellow">Python</b>, <b class="yellow">JavaScript</b>, <b class="yellow">SQLite</b>, <b class="yellow">MongoDB</b>, <b class="yellow">HTML5</b>, <b class="yellow">CSS</b>, <b class="yellow">Java</b>, and <b class="yellow">C++</b> throughout my studies.</p>
-                </div>
-              </div>
-            </section>
+<!-- About Me Section -->
+<section class="container-fluid p-5" id="About">
+  <div class="sparkles-container"></div>
+  <div class="row justify-content-center">
+    <div class="col-md-8 text-center">
+      <h2 class="display-4">About Me</h2>
+      <h3 class="lead">My Introduction</h3>
+      <div class="divider"></div>
+      <p>
+        I am an aspiring <b class="yellow">Electrical and Computer Engineer</b>, currently pursuing my degree at the
+        <b>University of Peloponnese</b>. My academic journey has provided me with a solid foundation in both
+        <b class="yellow">hardware and software</b>, enriched by practical experience in <b>programming</b>,
+        <b>problem-solving</b>, and <b>technical project management</b>.
+      </p>
+      <p>
+        Guided by a commitment to creating meaningful impact, I actively seek opportunities to apply my knowledge in ways that
+        add tangible value to society. As the former <b class="yellow">Vice Chair of the IEEE Student Branch</b> at my university,
+        I led initiatives that encouraged <b>teamwork</b>, fostered <b>professional development</b>, and strengthened the
+        <b>engineering community</b>.
+      </p>
+      <p>
+        I am dedicated to <b class="yellow">continuous learning</b> and staying at the forefront of technological advancements,
+        ensuring I remain adaptable in a rapidly evolving field. My ultimate goal is to leverage my expertise to drive
+        <b class="yellow">innovation</b>, support the university community, and make a lasting, positive impact on society.
+      </p>
+    </div>
+  </div>
+</section>
 
-
-    <!-- Third Section (Qualification)-->
-    <section class="container-fluid bg-white text-black p-5" id="Qualification">
-        <div class="row justify-content-center">
-        <h2 class="display-4">Qualification</h2>
-        <h3 class="lead">My journey<br></h3>
-          <div class="container-fluid bg-white p-3"></div>
-            <div class="col-md-8">
-              <h3 class="qualification-title">Department of Electrical and Computer Engineering of the University of Peloponnese</h3>
-              <p class="text-justify">
-                As a student of the Department of Electrical and Computer Engineering at the University of Peloponnese, I acquire knowledge and skills in a wide range of sciences and technologies, such as electronics, computer science, telecommunications, and energy. I learn how to analyze, design, implement, and apply systems and solutions that enhance quality of life and social welfare. I participate in research and educational programs that enrich me both scientifically and humanistically. I have the opportunity to collaborate with professors and colleagues from different levels and fields.</p>
-                <div class="row">
-                  <div class="col-md-4 text-md-left">
-                  <p><b><li>Start Date:</b> October, 2020 </p></li>
-                </div>
-                  <div class="col-md-4 text-md-left">
-                  <p><b><li>End Date:</b> In progress ⏳</p></li>
-                </div>
-                  <div class="col-md-4 text-md-left">
-                  <p><b><li>Location:</b> Patras, Greece</p></li>
-                </div>
-              </div>
-              </div>
-              </div>
-          </section>
-
-    <!-- Quarter Section (Skills)-->
-    <section class="container-fluid text-white p-5" id="Skills">
-        <div class="row justify-content-center">
-        <div class="col-md-8 text-center">
-        <h2 class="display-4">Skills</h2>
-        <h3 class="lead">Knowledge level: Intermediate Low </h3>
-        <div class="container-fluid  p-3"></div>
-        <br>
-        <div class="row">
-          <div class="col-md-4">
-            <h3 class="front">Frontend</h3>
-            <ul class="list-group">
-              <li class="list-group-item"><i class="fab fa-html5"></i>HTML<div class="progress"><div class="progress-bar bg-success" style="width:45%"></div></div></li>
-              <li class="list-group-item"><i class="fab fa-css3-alt"></i>CSS<div class="progress"><div class="progress-bar bg-info" style="width:35%"></div></div></li>
-              <li class="list-group-item"><i class="fab fa-js-square"></i>JavaScript<div class="progress"><div class="progress-bar bg-warning" style="width:5%"></div></div></li>
-              <li class="list-group-item"><i class="fab fa-bootstrap"></i>Bootstrap<div class="progress"><div class="progress-bar bg-primary" style="width:40%"></div></div></li>
-            </ul>
+<!-- Third Section (Qualification) -->
+<section class="container-fluid p-5" id="Qualification">
+  <div class="row justify-content-center">
+    <div class="col-md-10 text-center">
+      <h2 class="display-4">Qualification</h2>
+      <h3 class="lead">My Learning Path</h3>
+      <div class="divider mb-4"></div>
+    </div>
+    <div class="col-md-8">
+      <h3 class="qualification-title">
+        Department of Electrical and Computer Engineering of the University of Peloponnese
+      </h3>
+      <p>
+        As a student of the Department of Electrical and Computer Engineering at the University of Peloponnese, I acquire knowledge and skills in a wide range of sciences and technologies, such as electronics, computer science, telecommunications, and energy. I learn how to analyze, design, implement, and apply systems and solutions that enhance quality of life and social welfare. I participate in research and educational programs that enrich me both scientifically and humanistically. I have the opportunity to collaborate with professors and colleagues from different levels and fields.
+      </p>
+      <ul class="row list-unstyled qualification-details">
+        <li class="col-md-4 col-sm-12 detail-box">
+          <div class="icon-box">
+            <i class="fas fa-calendar-alt"></i>
           </div>
-          <div class="col-md-4">
-            <h3 class="front">Backend</h3>
-            <ul class="list-group">
-              <li class="list-group-item"><i class="fab fa-python"></i> Python <div class="progress"><div class="progress-bar bg-success" style="width:30%"></div></div></li>
-              <li class="list-group-item"><i class="fa-sharp fa-solid fa-database"></i> SQL/MySQLi <div class="progress"><div class="progress-bar bg-info" style="width:20%"></div></div></li>
-              <li class="list-group-item"><i class="fa-solid fa-server"></i> MongoDB <div class="progress"><div class="progress-bar bg-warning" style="width:10%"></div></div></li>
-              <li class="list-group-item"><i class="fa-sharp fa-solid fa-m"></i> Matlab <div class="progress"><div class="progress-bar bg-success" style="width:30%"></div></div></li>
-            </ul>
+          <div class="detail-content">
+            <span class="detail-label">Start Date</span>
+            <span class="detail-value">October, 2020</span>
           </div>
-          <div class="col-md-4">
-            <h3 class="front">Other</h3>
-            <ul class="list-group">
-              <li class="list-group-item"><i class="fa-sharp fa-regular fa-code-branch"></i> Github <div class="progress"><div class="progress-bar bg-success" style="width:15%"></div></div></li>
-              <li class="list-group-item"><i class="fas fa-notebook"></i> Jupyter Notebook <div class="progress"><div class="progress-bar bg-success" style="width:60%"></div></div></li>
-              <li class="list-group-item"><i class="fas fa-bar-chart"></i> PowerBI <div class="progress"><div class="progress-bar bg-success" style="width:40%"></div></div></li>
-            </ul>
-          </div>
-        </div>
-        </div>
-        </div>
-      </section>
+        </li>
 
-    <!-- Fifth Section (Projects)-->
-    <section class="container-fluid bg-white text-black p-5" id="Projects">
-      <div class="row justify-content-center">
-      <div class="col-md-8 text-center">
-      <h2 class="display-4">Project</h2>
-      <h3 class="lead">In Progress and Completed Projects</h3>
-      <div class="container-fluid bg-white p-3"></div>
+        <li class="col-md-4 col-sm-12 detail-box">
+          <div class="icon-box">
+            <i class="fas fa-hourglass-half"></i>
+          </div>
+          <div class="detail-content">
+            <span class="detail-label">End Date</span>
+            <span class="detail-value">In progress ⏳</span>
+          </div>
+        </li>
+
+        <li class="col-md-4 col-sm-12 detail-box">
+          <div class="icon-box">
+            <i class="fas fa-map-marker-alt"></i>
+          </div>
+          <div class="detail-content">
+            <span class="detail-label">Location</span>
+            <span class="detail-value">Patras, Greece</span>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- Quarter Section (Skills) -->
+<section class="container-fluid text-white p-5" id="Skills">
+  <div class="sparkles-container"></div>
+  <div class="row justify-content-center">
+    <div class="col-md-8 text-center">
+      <h2 class="display-4">Skills</h2>
+      <h3 class="lead">Knowledge level: Intermediate Low</h3>
+      <div class="container-fluid p-3"></div>
+      <br>
+
       <div class="row">
+        <!-- Frontend Skills -->
         <div class="col-md-4">
+          <h3 class="front">Frontend</h3>
           <ul class="list-group">
-            <li class="list-group-item"><i class="fab fa-python"></i> Personal Voice Assistant</li>
-            <li class="list-group-item"><b>A Brief Overview:</b></li>
-            <li class="list-group-item">Harnessing Natural Language Processing and AI for Voice Commands, User-friendly Interface, Supported by MongoDB for Efficient Data Management.</li>
-            <li class="list-group-item"><i class="fa-regular fa-bars-progress"></i>Progress<div class="progress"><div class="progress-bar bg-primary" style="width:15%"></div></div></li>
-            <div>
-              <li class="list-group-item"><button type="button" class="btn btn-secondary btn-lg" disabled>Soon</button>
-              </li>
-            </div>
-          </ul>
-        </div>
-        <div class="col-md-4">
-          <ul class="list-group">
-            <li class="list-group-item"><i class="fa-sharp fa-solid fa-sensor"></i> IoT Generative Music</li>
-            <li class="list-group-item"><b>A Brief Overview:</b></li>
-            <li class="list-group-item">Music from Weather Data with Rasberry Pi-4, Weather API and MongoDB.
+            <li class="list-group-item">
+              <i class="fab fa-html5"></i>
+              <span>HTML</span>
+              <div class="progresss">
+                <div class="progresss-bar bg-success" style="width:75%"></div>
+              </div>
             </li>
-            <li class="list-group-item"><i class="fa-regular fa-bars-progress"></i>Progress<div class="progress"><div class="progress-bar bg-primary" style="width:10%"></div></div></li>
-            <div>
-              <li class="list-group-item"><button type="button" class="btn btn-secondary btn-lg" disabled>Soon</button>
-              </li>
-            </div>
+            <li class="list-group-item">
+              <i class="fab fa-css3-alt"></i>
+              <span>CSS</span>
+              <div class="progresss">
+                <div class="progresss-bar bg-info" style="width:35%"></div>
+              </div>
+            </li>
+            <li class="list-group-item">
+              <i class="fab fa-js-square"></i>
+              <span>JavaScript</span>
+              <div class="progresss">
+                <div class="progresss-bar bg-warning" style="width:5%"></div>
+              </div>
+            </li>
+            <li class="list-group-item">
+              <i class="fab fa-bootstrap"></i>
+              <span>Bootstrap</span>
+              <div class="progresss">
+                <div class="progresss-bar bg-primary" style="width:40%"></div>
+              </div>
+            </li>
           </ul>
         </div>
+
+        <!-- Backend Skills -->
         <div class="col-md-4">
+          <h3 class="front">Backend</h3>
           <ul class="list-group">
-            <li class="list-group-item"><i class="fa-solid fa-circle-dot"></i> Crimes in London InsightHub</li>
-            <li class="list-group-item"><b>A Brief Overview:</b></li>
-            <li class="list-group-item">Data Synthesis and Visualisation using PowerBI for Crime in London as well as possible forecasts on the interpretation of data.</li>
-            <li class="list-group-item"><i class="fa-regular fa-bars-progress"></i>Progress<div class="progress"><div class="progress-bar bg-primary" style="width:100%"></div></div></li>
-            <div>
-              <li class="list-group-item"><button type="button" class="btn btn-secondary btn-lg" disabled>Soon</button>
-              </li>
-            </div>
+            <li class="list-group-item">
+              <i class="fab fa-python"></i>
+              <span>Python</span>
+              <div class="progresss">
+                <div class="progresss-bar bg-success" style="width:30%"></div>
+              </div>
+            </li>
+            <li class="list-group-item">
+              <i class="fas fa-database"></i>
+              <span>SQL/MySQLi</span>
+              <div class="progresss">
+                <div class="progresss-bar bg-info" style="width:20%"></div>
+              </div>
+            </li>
+            <li class="list-group-item">
+              <i class="fas fa-server"></i>
+              <span>MongoDB</span>
+              <div class="progresss">
+                <div class="progresss-bar bg-warning" style="width:10%"></div>
+              </div>
+            </li>
+            <li class="list-group-item">
+              <i class="fas fa-superscript"></i>
+              <span>Matlab</span>
+              <div class="progresss">
+                <div class="progresss-bar bg-success" style="width:30%"></div>
+              </div>
+            </li>
+          </ul>
+        </div>
+
+        <!-- Other Skills -->
+        <div class="col-md-4">
+          <h3 class="front">Other</h3>
+          <ul class="list-group">
+            <li class="list-group-item">
+              <i class="fas fa-code-branch"></i>
+              <span>GitHub</span>
+              <div class="progresss">
+                <div class="progresss-bar bg-success" style="width:15%"></div>
+              </div>
+            </li>
+            <li class="list-group-item">
+              <i class="fas fa-book"></i>
+              <span>Jupyter Notebook</span>
+              <div class="progresss">
+                <div class="progresss-bar bg-success" style="width:60%"></div>
+              </div>
+            </li>
+            <li class="list-group-item">
+              <i class="fas fa-chart-bar"></i>
+              <span>PowerBI</span>
+              <div class="progresss">
+                <div class="progresss-bar bg-success" style="width:40%"></div>
+              </div>
+            </li>
           </ul>
         </div>
       </div>
-      </div>
-      </div>
-    </section>
 
-<!-- Sixth Section (Volunteering)-->
-<section class="container-fluid p-5" id="Volunteering">
-  <div class="row">
-    <!-- Card 1 -->
-    <h2 class="display-4 text-center">Volunteering</h2>
-    <p class="lead text-center"> A Journey in Volunteering and Organizational Leadership</p>
-    <div class="col-sm-12 col-md-6 col-lg-4 mb-4">
-      <div class="card">
-        <div class="card-header" onclick="toggleCardInfo('volunteerInfo1')">
-          <h2 class="card-title">Department ECE, University of Peloponnese</h2>
-        </div>
-        <div class="card-body" id="volunteerInfo1" style="display: none;">
-          <p>🤝 Supported the coordination and execution of various events, promoting academic and professional development within the engineering community: The Freshers’ Welcome Ceremony, Researcher’s Day and Career Day
-          <p><strong>Date:</strong> [2021-2024]</p>
-          <p>💚Contributed as an active member of the IEEE, collaborating in organizing the following event: 3rd Summer School: "Smart Cities: Intelligent Systems Technologies and Services"</p>
-            <p><strong>Date:</strong> [2021-2022]</p>
-        </div>
-      </div>
-    </div>
-    <!-- Card 2 -->
-    <div class="col-sm-12 col-md-6 col-lg-4 mb-4">
-      <div class="card">
-        <div class="card-header" onclick="toggleCardInfo('volunteerInfo2')">
-          <h2 class="card-title">IEEE SB University of Peloponnese-Patras</h2>
-        </div>
-        <div class="card-body" id="volunteerInfo2" style="display: none;">
-          <p>My Journey with IEEE Student Branch</p>
-          <p><strong>Date:</strong> May 2022 - Nov 2022</p>
-          <p>During this period, as a founding member of the IEEE Student Branch at the University of Peloponnese-Patras, I played a pivotal role in establishing the organizational structure and promoting awareness of our activities. Together with fellow members, I contributed to drafting the branch constitution and creating promotional content. We organized meetings to engage with members, voted on the articles of the constitution, and conducted team bonding activities to foster a sense of community.</p>
-          <p><strong>Date:</strong> Nov 2022 - Present: Vice Chair</p>
-          <p>As Vice Chair of the IEEE Student Branch, I have focused on enhancing our online presence and organizational efficiency. One of my key contributions was creating the branch website, improving accessibility and engagement. Additionally, I've continued to organize meetings and activities to promote IEEE within the university and wider community, emphasizing the benefits of IEEE membership.</p>
-          <p><strong>Date:</strong> May 2023 - Present: Organizer of the 1st Summer School on Artificial Intelligence and Machine Learning</p>
-          <p>In May 2023, I organized the inaugural Summer School on Artificial Intelligence and Machine Learning at the University of Peloponnese. Over the course of three days, participants gained valuable insights from esteemed speakers and engaged in practical sessions to deepen their understanding of AI and ML. My responsibilities included planning the program, coordinating with the university's Department of Electrical and Computer Engineering, inviting speakers, managing logistics, and evaluating feedback to ensure the success of the event.</p>
-          <p><strong>Date:</strong> May 2024 - Present: Organizer of the 2st Summer School: Tech Revolutions</p>
-          <p>Soon More Info About my Actions</p>
-
-
-          <p><strong>Project:</strong> IEEE Student Branch University of Peloponnese Non-Profit Website</p>
-          <p><strong>Project:</strong> Summer School 2024 Non-profit Event Website</p>
-        </div>
-      </div>
-    </div>
-    <!-- Card 3 -->
-    <div class="col-sm-12 col-md-6 col-lg-4 mb-4">
-      <div class="card">
-        <div class="card-header" onclick="toggleCardInfo('volunteerInfo3')">
-          <h2 class="card-title">IEEE Puzzlers</h2>
-        </div>
-        <div class="card-body" id="volunteerInfo3" style="display: none;">
-          <p><strong>Date:</strong> August 2023 - Present: Contributing to the IEEE Puzzlers Group</p>
-          <p>Since August 2023, I've been an active member of the IEEE Puzzlers Group, engaging in puzzle-solving and ensuring a seamless experience for our members. Alongside solving puzzles, I take on the responsibility of monitoring the puzzle-solving process. Any issues I encounter are promptly reported to the central team for resolution. This proactive approach guarantees that puzzles run smoothly and any potential problems are swiftly addressed. Consequently, our members can enjoy a seamless puzzle-solving experience.</p>
+      <div class="mb-4 text-center">
+        <small class="d-block text-muted mb-2">Skill Level</small>
+        <div style="display: flex; justify-content: center; gap: 15px; flex-wrap: wrap;">
+          <span style="color: #28a745;"><i class="fas fa-square"></i> High</span>
+          <span style="color: #ffc107;"><i class="fas fa-square"></i> Medium</span>
+          <span style="color: #17a2b8;"><i class="fas fa-square"></i> Low</span>
+          <span style="color: #dc3545;"><i class="fas fa-square"></i> Beginner</span>
         </div>
       </div>
     </div>
   </div>
 </section>
 
+    <!-- Fifth Section (Projects)-->
+    <section id="Projects" class="container-fluid py-5">
+      <div class="sparkles-container"></div>
+      <div class="container text-center">
+        <h2 class="display-4">Projects</h2>
+        <p class="lead mb-5">Showcasing my completed and ongoing work</p>
+
+        <div class="row g-4">
+          <!-- Project Card 1 -->
+          <div class="col-md-4">
+            <div class="project-card">
+              <i class="fab fa-python project-icon"></i>
+              <h5 class="project-title">Personal Voice Assistant</h5>
+              <p class="project-overview">
+                A user-friendly digital assistant designed to respond to voice commands in Greek, combining advanced technology for real-time assistance.
+              </p>
+              <div class="progress">
+                <div class="progress-bar in-progress" style="width: 85%;"></div>
+              </div>
+              <button class="btn btn-secondary" disabled>Coming Soon</button>
+            </div>
+          </div>
+
+          <!-- Project Card 2 -->
+          <div class="col-md-4">
+            <div class="project-card">
+              <i class="fa-sharp fa-solid fa-sensor project-icon"></i>
+              <h5 class="project-title">IoT Generative Music</h5>
+              <p class="project-overview">
+                An innovative project using Raspberry Pi-4, Weather API, and MongoDB to create music from weather data.
+              </p>
+              <div class="progress">
+                <div class="progress-bar early" style="width: 5%;"></div>
+              </div>
+              <button class="btn btn-secondary" disabled>Coming Soon</button>
+            </div>
+          </div>
+
+          <!-- Project Card 3 -->
+          <div class="col-md-4">
+            <div class="project-card">
+              <i class="fa-solid fa-circle-dot project-icon"></i>
+              <h5 class="project-title">Crimes in London InsightHub</h5>
+              <p class="project-overview">
+                Data visualization and synthesis using PowerBI for crime trends in London with forecasting capabilities.
+              </p>
+              <div class="progress">
+                <div class="progress-bar complete" style="width: 100%;"></div>
+              </div>
+              <button class="btn btn-secondary" disabled>Coming Soon</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Fourth Section (Work Experience)-->
+    <section class="container-fluid p-5" id="WorkExperience">
+      <div class="sparkles-container"></div>
+    <h2 class="display-4 text-center mb-4">Career Highlights</h2>
+    <p class="lead text-center mb-5">Key Achievements and Professional Milestones</p>
+          <div class="timeline">
+            <!-- Experience 1 -->
+            <div class="timeline-event">
+              <div class="timeline-dot"></div>
+              <div class="timeline-content">
+                <h3>PwC Greece</h3>
+                <p class="timeline-date"><strong>Sept 2024 - Feb 2025:</strong> Information Technology Project Manager (Internship)</p>
+              </div>
+            </div>
+
+            <!-- Experience 2 -->
+            <div class="timeline-event">
+              <div class="timeline-dot"></div>
+              <div class="timeline-content">
+                <h3>PwC Greece</h3>
+                <p class="timeline-date"><strong>March 2025 - Present:</strong> Information Technology Project Manager (Associate)</p>
+              </div>
+            </div>
+      </section>
+
+    <!-- Sixth Section (Volunteering)-->
+      <section class="container-fluid p-5" id="Volunteering">
+        <div class="sparkles-container"></div>
+        <h2 class="display-4 text-center mb-4">My Volunteering Journey</h2>
+        <p class="lead text-center mb-5">A Journey in Volunteering and Organizational Leadership</p>
+
+        <div class="timeline">
+          <!-- Event 1 -->
+          <div class="timeline-event">
+            <div class="timeline-dot"></div>
+            <div class="timeline-content">
+              <h3>Department ECE, University of Peloponnese</h3>
+              <p class="timeline-date"><strong>Sept 2021 - Present:</strong> Volunteering</p>
+              <ul>
+                <li>Supported Freshers’ Welcome Ceremony, Researcher’s Day, and Career Day.</li>
+                <li>Organized "Smart Cities" Summer School as part of IEEE.</li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- Event 2 -->
+          <div class="timeline-event">
+            <div class="timeline-dot"></div>
+            <div class="timeline-content">
+              <h3>IEEE SB University of Peloponnese-Patras</h3>
+              <p class="timeline-date"><strong>May 2022 - Nov 2022:</strong> Founding Member</p>
+              <p>Established organizational structure, drafted constitution, and conducted team bonding activities.</p>
+              <p class="timeline-date"><strong>Nov 2022 - Aug 2024:</strong> Vice Chair</p>
+              <p>Enhanced online presence, organized activities, and created the branch website.</p>
+              <p class="timeline-date"><strong>May 2023 - June 2023:</strong> Organizer</p>
+              <p>Organized and delivered the inaugural Summer School on AI and Machine Learning.</p>
+              <p class="timeline-date"><strong>Dec 2023 - June 2024:</strong> Organizer</p>
+              <p>Organized and launched the inaugural Summer School: "Tech Revolutions in Cybersecurity."</p>
+              <p class="timeline-date"><strong>Sept 2024 - Present:</strong> Executive Coordinator [Honorary]</p>
+              <p>Team leadership and management, coordination of actions, development of tools, and identification of opportunities.</p>
+              <p class="timeline-date"><strong>Project:</strong> Responsible</p>
+              <ul>
+                <li>Non-Profit Website for IEEE Student Branch (University of Peloponnese).</li>
+                <li>Website for Summer School 2024 Event.</li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- Event 3 -->
+          <div class="timeline-event">
+            <div class="timeline-dot"></div>
+            <div class="timeline-content">
+              <h3>IEEE Puzzlers</h3>
+              <p class="timeline-date"><strong>August 2023 - Present:</strong> Contributing to the IEEE Puzzlers Group</p>
+              <p>Contributed to puzzle-solving activities and ensured a seamless experience for members by addressing issues proactively.</p>
+            </div>
+          </div>
+
+          <!-- Event 4 -->
+        </div>
+      </section>
+
       <!-- Seventh Section (Footer)-->
       <section class="container-fluid text-white p-5" id="Contact">
         <div class="row">
+          <div class="sparkles-container"></div>
           <div class="col-lg-6 col-md-8 mx-auto">
             <h2 class="display-4">Contact Me</h2>
             <p class="text-center">You can reach me by email, LinkedIn or GitHub.</p>
@@ -281,13 +462,14 @@
             </div>
             <br>
           </div>
-          <p class="text-center">© 2023 Konstantinos Dritsas. All rights reserved.</p>
-          <p class="text-center">It was made in the context of practicing the content of the course about:</p>
-          <b class="text-center">Web Technologies and Applications ECE_INF750</b>
+          <p class="text-center">© 2024 Konstantinos Dritsas. All rights reserved.</p>
       </section>
 
       <script src="assets/script.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
       <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
+      <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
 
     </body>
 </html>
