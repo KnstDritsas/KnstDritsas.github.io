@@ -1,469 +1,540 @@
 <!DOCTYPE html>
-  <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <meta name="author" content="Konstantinos Dritsas | https://github.com/KnstDritsas">
-        <meta name="description" content="Portfolio of Konstantinos Dritsas: Project Management Intern and ECE undergraduate with expertise in programming, AI, and volunteering.">
-        <meta name="keywords" content="Konstantinos Dritsas, Portfolio, Project Management, Electrical and Computer Engineering, AI, Cybersecurity, Python, HTML, CSS">
+<html lang="en" data-theme="dark" data-accent="sky">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="author" content="Konstantinos Dritsas | https://github.com/KnstDritsas" />
+  <meta name="description" content="Dashboard-style portfolio for Konstantinos Dritsas: IT Project Management at PwC Greece • ECE Undergraduate at University of the Peloponnese. Projects, skills, career, and contact." />
+  <meta name="robots" content="index,follow" />
 
-        <link rel="icon" type="image/png" sizes="16x16" href="assets/img/favicon.png">
+  <!-- Theming for system bars (respects OS setting) -->
+  <meta name="theme-color" content="#0b0f15" media="(prefers-color-scheme: dark)">
+  <meta name="theme-color" content="#f7fafc" media="(prefers-color-scheme: light)">
 
-        <!-- Unicons -->
-        <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.4.2/css/all.css" />
-        <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.4.2/css/sharp-solid.css" />
-        <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.4.2/css/sharp-regular.css" />
-        <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.4.2/css/sharp-light.css" />
+  <!-- Open Graph / Twitter -->
+  <meta property="og:title" content="Konstantinos Dritsas • Dashboard" />
+  <meta property="og:description" content="IT Project Management @ PwC Greece • ECE Undergraduate. Explore my projects, skills, career timeline, and volunteering." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://github.com/KnstDritsas" />
+  <meta name="twitter:card" content="summary" />
 
-        <!-- Bootstrap CSS -->
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  <title>Konstantinos Dritsas • Dashboard</title>
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/img/logo.png">
 
-        <!-- My CSS -->
-        <link rel="stylesheet" href="assets/css/styles.css">
+  <!-- Fonts & Icons -->
+  <link rel="preconnect" href="https://site-assets.fontawesome.com" crossorigin>
+  <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.4.2/css/all.css" />
+  <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.4.2/css/sharp-solid.css" />
+  <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.4.2/css/sharp-regular.css" />
 
-        <!-- Title -->
-        <title>Konstantinos Dritsas | Showcase</title>
-    </head>
+  <!-- Bootstrap 5 -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" crossorigin="anonymous" />
+  <link href="assets/css/styles.css" rel="stylesheet" />
 
-    <!-- Navbar -->
-    <body>
-      <header>
-        <nav class="navbar navbar-expand-lg navbar-dark bg-dark shadow-sm" role="navigation" aria-label="Main Navigation">
-          <div class="container-fluid px-4">
-            <!-- Brand / Name -->
-            <a class="navbar-brand fw-bold text-warning" href="#first-section">Knstdritsas</a>
+  <!-- Structured data -->
+  <script type="application/ld+json">
+  {
+    "@context":"https://schema.org",
+    "@type":"Person",
+    "name":"Konstantinos Dritsas",
+    "url":"https://github.com/KnstDritsas",
+    "sameAs":[
+      "https://www.linkedin.com/in/konstantinos-dritsas-501b57237/"
+    ],
+    "jobTitle":"Information Technology Project Manager (Associate)",
+    "worksFor":{"@type":"Organization","name":"PwC Greece"},
+    "alumniOf":{"@type":"CollegeOrUniversity","name":"University of the Peloponnese"},
+    "knowsAbout":["Project Management","Electrical and Computer Engineering","Python","Power BI","HTML","CSS","JavaScript","MongoDB","SQL","Matlab"]
+  }
+  </script>
+</head>
+<body>
+  <!-- Skip to main content for keyboard users -->
+  <a href="#main" class="visually-hidden-focusable position-absolute top-0 start-0 m-2 px-2 py-1 rounded-2 bg-dark text-white">Skip to content</a>
 
-            <!-- Toggler Button for Mobile -->
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarItems"
-              aria-controls="navbarItems" aria-expanded="false" aria-label="Toggle navigation">
-              <span class="navbar-toggler-icon"></span>
+  <div class="app">
+    <!-- SIDEBAR -->
+    <aside class="sidebar d-flex flex-column" aria-label="Primary">
+      <div class="brand d-flex align-items-center gap-2 p-3 border-bottom">
+        <!-- Use a real <img> if you have a photo/logo -->
+        <a href="#overview" class="logo-link d-inline-flex align-items-center justify-content-center rounded-circle"
+          aria-label="Go to overview">
+          <img src="assets/img/logo.png" alt="Portrait of Konstantinos Dritsas"
+              class="logo-img rounded-circle" width="48" height="48" loading="lazy">
+        </a>
+
+        <div class="brand-text">
+          <h1 class="h5 m-0 fw-bold">Konstantinos Dritsas</h1>
+          <p class="m-0 small text-secondary">Junior IT Project Manager • ECE</p>
+        </div>
+      </div>
+
+      <nav class="links" role="navigation" aria-label="Sections">
+        <a class="nav-link active" href="#overview"><i class="fa-sharp fa-solid fa-grid-2 me-2"></i>Overview</a>
+        <a class="nav-link" href="#about"><i class="fa-sharp fa-solid fa-user me-2"></i>About</a>
+        <a class="nav-link" href="#qualifications"><i class="fa-sharp fa-solid fa-graduation-cap me-2"></i>Qualifications</a>
+        <a class="nav-link" href="#projects"><i class="fa-sharp fa-solid fa-kanban me-2"></i>Projects</a>
+        <a class="nav-link" href="#skills"><i class="fa-sharp fa-solid fa-bolt me-2"></i>Skills</a>
+        <a class="nav-link" href="#volunteering"><i class="fa-sharp fa-solid fa-hands-holding-heart me-2"></i>Volunteering</a>
+        <a class="nav-link" href="#career"><i class="fa-sharp fa-solid fa-timeline me-2"></i>Career</a>
+        <a class="nav-link" href="#contact"><i class="fa-sharp fa-solid fa-paper-plane me-2"></i>Contact</a>
+      </nav>
+
+    </aside>
+
+    <!-- CONTENT -->
+    <section class="content">
+      <div class="topbar py-3 px-3">
+        <div class="d-flex align-items-center justify-content-between flex-wrap gap-2">
+          <div class="d-flex align-items-center gap-2">
+            <i class="fa-sharp fa-solid fa-chart-tree-map" aria-hidden="true"></i>
+            <span class="fw-semibold">Dashboard</span>
+            <span class="badge text-bg-warning ms-2">Beta</span>
+          </div>
+
+          <div class="d-flex align-items-center gap-2">
+            <!-- Theme Toggle only -->
+            <button id="themeToggle" type="button" class="btn btn-sm btn-outline-light" title="Toggle theme">
+              <i class="fa-sharp fa-solid fa-moon" aria-hidden="true"></i>
+              <span class="visually-hidden">Toggle theme</span>
             </button>
+          </div>
+        </div>
+      </div>
 
-            <!-- Navbar collapse -->
-            <div class="collapse navbar-collapse justify-content-center" id="navbarItems">
-              <ul class="navbar-nav gap-3">
-                <li class="nav-item"><a class="nav-link" href="#first-section">Welcome</a></li>
-                <li class="nav-item"><a class="nav-link" href="#About">About</a></li>
-                <li class="nav-item"><a class="nav-link" href="#Qualification">Qualification</a></li>
-                <li class="nav-item"><a class="nav-link" href="#Skills">Skills</a></li>
-                <li class="nav-item"><a class="nav-link" href="#Projects">What I’ve Built</a></li>
-                <li class="nav-item"><a class="nav-link" href="#WorkExperience">Work Experience</a></li>
-                <li class="nav-item"><a class="nav-link" href="#Volunteering">Volunteering</a></li>
-                <li class="nav-item"><a class="nav-link" href="#Contact">Let’s Connect</a></li>
+      <main id="main" class="main">
+        <!-- OVERVIEW -->
+        <section id="overview" class="mb-4" aria-labelledby="ov-title">
+          <h2 id="ov-title" class="visually-hidden">Overview</h2>
+          <div class="row g-3">
+            <div class="col-12 col-xl-6">
+              <div class="card p-3 h-100">
+                <div class="d-flex align-items-start justify-content-between">
+                  <div>
+                    <h3 class="h5 mb-1">Hello, I'm Konstantinos Dritsas</h3>
+                    <p class="text-secondary mb-3">Junior IT Project Manager @ PwC Greece • ECE Student</p>
+                  </div>
+                  <span class="status-pill pill-success"><i class="fa-sharp fa-solid fa-circle-check" aria-hidden="true"></i>Currently @ PwC Greece</span>
+                </div>
+                <div class="row g-3">
+                  <div class="col-6">
+                    <div class="metric"><i class="fa-sharp fa-solid fa-diagram-project" style="color:var(--accent-2)" aria-hidden="true"></i><div><div class="value">12</div><small class="text-secondary">Projects</small></div></div>
+                  </div>
+                  <div class="col-6">
+                    <div class="metric"><i class="fa-sharp fa-solid fa-award" style="color:var(--accent)" aria-hidden="true"></i><div><div class="value">5</div><small class="text-secondary">Certifications</small></div></div>
+                  </div>
+                  <div class="col-6">
+                    <div class="metric"><i class="fa-sharp fa-solid fa-briefcase text-success" aria-hidden="true"></i><div><div class="value">Intern → Associate</div><small class="text-secondary">Role progression</small></div></div>
+                  </div>
+                  <div class="col-6">
+                    <div class="metric"><i class="fa-sharp fa-solid fa-clock-rotate-left" style="color:var(--accent-2)" aria-hidden="true"></i><div><div class="value">2020–2025</div><small class="text-secondary">Active Journey</small></div></div>
+                  </div>
+                </div>
+              </div>
+            </div>
 
-                <!-- LinkedIn Button ONLY FOR MOBILE -->
-                <li class="nav-item d-lg-none">
-                  <a href="https://www.linkedin.com/in/konstantinos-dritsas-501b57237/"
-                     class="btn btn-linkedin mx-auto mt-2"
-                     target="_blank"
-                     rel="noopener noreferrer"
-                     aria-label="Visit my LinkedIn profile"
-                     title="Visit my LinkedIn">
-                    <i class="fab fa-linkedin-in"></i>
+            <div class="col-12 col-xl-6">
+              <div class="card p-3 h-100">
+                <div class="d-flex align-items-center justify-content-between mb-2">
+                  <h3 class="h5 m-0">Roadmap</h3>
+                  <span class="badge text-bg-info">WIP</span>
+                </div>
+                <div class="vstack gap-3" aria-label="Roadmap progress">
+                  <div>
+                    <div class="d-flex justify-content-between small text-secondary"><span>Graduation</span><span>2020–2026</span></div>
+                    <div class="bar mt-1" role="progressbar" aria-label="Graduation progress" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"><span style="width:80%; background:linear-gradient(90deg, var(--accent-2), #60a5fa)"></span></div>
+                  </div>
+                  <div>
+                    <div class="d-flex justify-content-between small text-secondary"><span>Intern → Junior Project Manager</span><span>2024–2025</span></div>
+                    <div class="bar mt-1" role="progressbar" aria-label="Junior to Mid progress" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"><span style="width:100%; background:linear-gradient(90deg, #22c55e, #84cc16)"></span></div>
+                  </div>
+                  <div>
+                    <div class="d-flex justify-content-between small text-secondary"><span>Hidden <span class="status-pill pill-locked ms-1"><i class="fa-sharp fa-solid fa-lock" aria-hidden="true"></i> Locked</span></span><span>2026–2027</span></div>
+                    <div class="bar mt-1" role="progressbar" aria-label="Hidden target progress" aria-valuenow="35" aria-valuemin="0" aria-valuemax="100"><span style="width:0%; background:linear-gradient(90deg, var(--locked), #475569)"></span></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- SKILLS -->
+        <section id="skills" class="mb-4" aria-labelledby="skills-title">
+          <div class="row g-3">
+
+            <!-- Skills Matrix -->
+            <div class="col-lg-6">
+              <div class="card p-3 h-100">
+                <h3 id="skills-title" class="h5 mb-2">
+                  <i class="fa-sharp fa-solid fa-bolt me-2" style="color:var(--accent)"></i>
+                  Skills Matrix
+                </h3>
+
+                <ul class="list-unstyled m-0">
+                  <li class="d-flex align-items-center mb-3">
+                    <span class="skill-chip flex-shrink-0">
+                      <i class="fa-brands fa-html5" aria-hidden="true"></i> HTML
+                    </span>
+                    <div class="bar flex-grow-1 ms-3" role="progressbar" aria-label="HTML" aria-valuemin="0" aria-valuemax="100" aria-valuenow="80">
+                      <span style="width:80%; background:linear-gradient(90deg,#22c55e,#16a34a)"></span>
+                    </div>
+                  </li>
+
+                  <li class="d-flex align-items-center mb-3">
+                    <span class="skill-chip flex-shrink-0">
+                      <i class="fa-brands fa-css3-alt" aria-hidden="true"></i> CSS
+                    </span>
+                    <div class="bar flex-grow-1 ms-3" role="progressbar" aria-label="CSS" aria-valuemin="0" aria-valuemax="100" aria-valuenow="80">
+                      <span style="width:80%; background:linear-gradient(90deg,#38bdf8,#60a5fa)"></span>
+                    </div>
+                  </li>
+
+                  <li class="d-flex align-items-center mb-3">
+                    <span class="skill-chip flex-shrink-0">
+                      <i class="fa-brands fa-js" aria-hidden="true"></i> JavaScript
+                    </span>
+                    <div class="bar flex-grow-1 ms-3" role="progressbar" aria-label="JavaScript" aria-valuemin="0" aria-valuemax="100" aria-valuenow="15">
+                      <span style="width:15%; background:linear-gradient(90deg,#f59e0b,#fbbf24)"></span>
+                    </div>
+                  </li>
+
+                  <li class="d-flex align-items-center">
+                    <span class="skill-chip flex-shrink-0">
+                      <i class="fa-brands fa-python" aria-hidden="true"></i> Python
+                    </span>
+                    <div class="bar flex-grow-1 ms-3" role="progressbar" aria-label="Python" aria-valuemin="0" aria-valuemax="100" aria-valuenow="35">
+                      <span style="width:35%; background:linear-gradient(90deg,#22c55e,#84cc16)"></span>
+                    </div>
+                  </li>
+                </ul>
+
+                <small class="text-secondary mt-3 d-block">
+                  Tooling: Bootstrap, PowerBI, GitHub, Jupyter, SQL/MySQLi, MongoDB, Matlab.
+                </small>
+              </div>
+            </div>
+
+            <!-- Career Highlights -->
+            <div class="col-lg-6">
+              <div class="card p-3 h-100">
+                <h3 class="h5 mb-2">
+                  <i class="fa-sharp fa-solid fa-diagram-project me-2" style="color:var(--accent-2)"></i>
+                  Career Highlights
+                </h3>
+                <ul class="list-unstyled m-0">
+                  <li class="d-flex align-items-start mb-2">
+                    <i class="fa-sharp fa-solid fa-circle-check text-success mt-1 me-3" aria-hidden="true"></i>
+                    <span>Transitioned from <strong>Intern</strong> to <strong>Associate IT Project Manager</strong> at PwC Greece (2024–2025).</span>
+                  </li>
+                  <li class="d-flex align-items-start mb-2">
+                    <i class="fa-sharp fa-solid fa-circle-check text-success mt-1 me-3" aria-hidden="true"></i>
+                    <span><strong>Vice Chair → Executive Coordinator</strong> at IEEE SB UoP (Patras), leading initiatives and team management.</span>
+                  </li>
+                  <li class="d-flex align-items-start mb-2">
+                    <i class="fa-sharp fa-solid fa-circle-check text-success mt-1 me-3" aria-hidden="true"></i>
+                    <span>Organized two <strong>flagship Summer Schools</strong>: AI &amp; Machine Learning (2023) and Tech Revolutions (2024).</span>
+                  </li>
+                  <li class="d-flex align-items-start mb-2">
+                    <i class="fa-sharp fa-solid fa-circle-check text-success mt-1 me-3" aria-hidden="true"></i>
+                    <span>Built and deployed <strong>non-profit websites</strong> for IEEE events and student engagement.</span>
+                  </li>
+                  <li class="d-flex align-items-start mb-0">
+                    <i class="fa-sharp fa-solid fa-circle-check text-success mt-1 me-3" aria-hidden="true"></i>
+                    <span>Active contributor to <strong>IEEE Puzzlers</strong>, enhancing problem-solving and collaboration.</span>
+                  </li>
+                </ul>
+              </div>
+            </div>
+
+          </div>
+        </section>
+
+        <!-- PROJECTS (KANBAN) -->
+        <section id="projects" class="mb-4" aria-labelledby="proj-title">
+          <div class="d-flex align-items-center justify-content-between mb-2">
+            <h3 id="proj-title" class="h5 m-0"><i class="fa-sharp fa-solid fa-kanban me-2" style="color:var(--accent-2)"></i>Projects Board</h3>
+
+          </div>
+          <div class="kanban">
+            <div class="column">
+              <div class="col-title">
+                <span class="fw-semibold">Planned</span>
+                <span class="badge text-bg-secondary" aria-label="planned count">1</span>
+              </div>
+
+              <article class="ticket locked">
+                <div class="d-flex justify-content-between">
+                  <h4 class="h6 mb-1">IoT Generative Music</h4>
+                </div>
+                <p class="small text-secondary mb-2">Raspberry Pi 4 + Weather API → ambient music. (MongoDB, Node)</p>
+                <div class="d-flex gap-1 flex-wrap">
+                  <span class="badge text-bg-dark">MongoDB</span>
+                  <span class="badge text-bg-dark">Node</span>
+                </div>
+              </article>
+            </div>
+
+            <div class="column">
+              <div class="col-title">
+                <span class="fw-semibold">In Progress</span>
+                <span class="badge text-bg-warning" aria-label="in progress count">1</span>
+              </div>
+              <article class="ticket">
+                <h4 class="h6 mb-1">Personal Voice Assistant (GR)</h4>
+                <p class="small text-secondary mb-2">Real-time assistant that understands Greek.</p>
+                <div class="progress" style="height:8px" aria-label="Progress">
+                  <div class="progress-bar bg-warning" style="width:70%" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100"></div>
+                </div>
+              </article>
+            </div>
+
+            <div class="column">
+              <div class="col-title">
+                <span class="fw-semibold">Completed</span>
+                <span class="badge text-bg-success" aria-label="completed count">4</span>
+              </div>
+              <article class="ticket">
+                <h4 class="h6 mb-1">IEEE SB Websites</h4>
+                <p class="small text-secondary mb-2">Non-profit & Summer School 2024 event site.</p>
+                <span class="badge text-bg-success">Deployed</span>
+              </article>
+              <article class="ticket">
+                <h4 class="h6 mb-1">University Support Tools</h4>
+                <p class="small text-secondary mb-2">Internal coordination & opportunity finder.</p>
+                <span class="badge text-bg-success">Impact</span>
+              </article>
+              <article class="ticket">
+                <h4 class="h6 mb-1">Crimes in London InsightHub</h4>
+                <p class="small text-secondary mb-2">PowerBI dashboard with forecasting.</p>
+                <span class="badge text-bg-success">Case Study</span>
+              </article>
+              <article class="ticket">
+                <h4 class="h6 mb-1">MyParents Application</h4>
+                <p class="small text-secondary mb-2">
+                  Android app helping parents in Patras discover safe places to visit with their children.
+                </p>
+                <span class="badge text-bg-success">Mobile App</span>
+              </article>
+            </div>
+
+            <div class="column">
+              <div class="col-title">
+                <span class="fw-semibold">Lost</span>
+                <span class="badge text-bg-secondary" aria-label="in progress count">0</span>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- CAREER / TIMELINE -->
+        <section id="career" class="mb-4" aria-labelledby="career-title">
+          <div class="card p-3">
+            <div class="d-flex align-items-center justify-content-between">
+              <h3 id="career-title" class="h5 m-0"><i class="fa-sharp fa-solid fa-timeline me-2" style="color:var(--accent-2)"></i>Career Timeline</h3>
+              <span class="status-pill pill-progress"><i class="fa-sharp fa-solid fa-spinner-third" aria-hidden="true"></i> Updating</span>
+            </div>
+            <div class="timeline mt-3">
+              <div class="tl-item">
+                <div class="ms-4">
+                  <div class="fw-semibold">PwC Greece — IT Project Manager (Intern)</div>
+                  <small class="text-secondary">Sep 2024 – Feb 2025</small>
+                </div>
+              </div>
+              <div class="tl-item">
+                <div class="ms-4">
+                  <div class="fw-semibold">PwC Greece — IT Project Manager (Associate)</div>
+                  <small class="text-secondary">Mar 2025 – Present</small>
+                </div>
+              </div>
+              <div class="tl-item">
+                <div class="ms-4 d-flex align-items-center gap-2">
+                  <div class="fw-semibold">Hidden</div>
+                  <span class="status-pill pill-locked"><i class="fa-sharp fa-solid fa-lock" aria-hidden="true"></i> Locked</span>
+                </div>
+                <small class="ms-4 text-secondary">Hidden</small>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- ABOUT -->
+        <section id="about" class="mb-4" aria-labelledby="about-title">
+          <div class="card p-3">
+            <h3 id="about-title" class="h5 mb-2">
+              <i class="fa-sharp fa-solid fa-user me-2" style="color:var(--accent)"></i>
+              About Me
+            </h3>
+
+            <p class="mb-2">
+              I’m a <strong>Junior IT Project Manager</strong> at <strong>PwC Greece</strong> and an
+              <strong>Electrical &amp; Computer Engineering</strong> undergraduate at the
+              <strong>University of the Peloponnese</strong>. I bridge engineering and delivery:
+              translating ambiguous asks into clear scope, road-mapping milestones, coordinating contributors,
+              and getting reliable releases out the door.
+            </p>
+
+            <p class="mb-2">
+              Previously, I <strong>served as Vice Chair of the IEEE Student Branch</strong> (2022–2024),
+              helping grow the community, organize flagship events (AI &amp; ML Summer School 2023, Tech
+              Revolutions 2024), and stand up the branch’s web presence. I now <strong>mentor the group informally</strong>
+              when asked.
+            </p>
+
+            <div class="mt-3 small text-secondary">
+              <em>Interests:</em> PMO Tooling & portfolio reporting, IT governance & risk, Change management & adoption, Excel→Power BI pipelines, Workforce upskilling & utilization
+            </div>
+          </div>
+        </section>
+
+        <!-- QUALIFICATIONS -->
+        <section id="qualifications" class="mb-4" aria-labelledby="qual-title">
+          <div class="card p-3">
+            <h3 id="qual-title" class="h5 mb-2">
+              <i class="fa-sharp fa-solid fa-graduation-cap me-2" style="color:var(--accent-2)"></i>
+              Qualifications — My Learning Path
+            </h3>
+            <div class="row g-3 align-items-start">
+              <div class="col-md-8">
+                <h4 class="h6 mb-1">
+                  B.Sc. in Electrical & Computer Engineering — University of the Peloponnese
+                </h4>
+                <ul class="mb-2 text-secondary small">
+                  <li>Focused on electronics, computer science, telecommunications, and energy systems.</li>
+                  <li>Experienced in analyzing, designing, and implementing technologies that improve everyday life.</li>
+                  <li>Engaged in research projects and academic collaborations with faculty and peers.</li>
+                </ul>
+              </div>
+              <div class="col-md-4">
+                <dl class="row small mb-0">
+                  <dt class="col-5 text-secondary">Start</dt><dd class="col-7">October 2020</dd>
+                  <dt class="col-5 text-secondary">Status</dt><dd class="col-7">In Progress</dd>
+                  <dt class="col-5 text-secondary">Location</dt><dd class="col-7">Patras, Greece</dd>
+                </dl>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- VOLUNTEERING -->
+        <section id="volunteering" class="mb-4" aria-labelledby="vol-title">
+          <div class="card p-3">
+            <div class="d-flex align-items-center justify-content-between">
+              <h3 id="vol-title" class="h5 m-0">
+                <i class="fa-sharp fa-solid fa-hands-holding-heart me-2" style="color:var(--accent)"></i>
+                My Volunteering Journey
+              </h3>
+            </div>
+            <div class="row g-3 mt-1">
+
+              <!-- IEEE SB -->
+              <div class="col-md-6">
+                <div class="p-2 rounded-3 border mb-2">
+                  <div class="fw-semibold">IEEE Student Branch — University of Peloponnese (Patras)</div>
+                  <ul class="small text-secondary mb-0 mt-1">
+                    <li><strong>Founding Member</strong> (May 2022 – Nov 2022): Set up the branch’s structure and constitution, introduced team bonding activities.</li>
+                    <li><strong>Vice Chair</strong> (Nov 2022 – Aug 2024): Expanded the branch’s online presence, led activities, and launched its official website.</li>
+                    <li><strong>Executive Coordinator (Honorary)</strong> (Sept 2024 – Present): Provide leadership, coordinate initiatives, and develop new tools and opportunities.</li>
+                    <li><strong>Organizer</strong>: Delivered the first <em>AI & Machine Learning Summer School</em> (2023) and launched <em>“Tech Revolutions in Cybersecurity”</em> (2024).</li>
+                  </ul>
+                </div>
+
+                <!-- IEEE Puzzlers -->
+                <div class="p-2 rounded-3 border">
+                  <div class="fw-semibold">IEEE Puzzlers (Aug 2023 – Present)</div>
+                  <p class="small text-secondary mb-0 mt-1">
+                    Active contributor to puzzle-solving activities; improved member experience by proactively addressing challenges and fostering collaboration.
+                  </p>
+                </div>
+              </div>
+
+              <!-- Department ECE -->
+              <div class="col-md-6">
+                <div class="p-2 rounded-3 border">
+                  <div class="fw-semibold">Department of Electrical & Computer Engineering — University of Peloponnese (Sept 2021 – Present)</div>
+                  <ul class="small text-secondary mb-0 mt-1">
+                    <li>Supported <em>Freshers’ Welcome Ceremony</em>, <em>Researcher’s Day</em>, and <em>Career Day</em> initiatives.</li>
+                    <li>Organized the <em>“Smart Cities” Summer School</em> in collaboration with IEEE.</li>
+                    <li>Led development of non-profit websites, including the <em>IEEE SB site</em> and <em>2024 Summer School portal</em>.</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- CONTACT -->
+        <section id="contact" class="mb-4" aria-labelledby="contact-title">
+          <div class="row g-3">
+            <div class="col-lg-12">
+              <div class="card p-3 h-100">
+                <h3 id="contact-title" class="h5 mb-3">
+                  <i class="fa-sharp fa-solid fa-paper-plane me-2" style="color:var(--accent)"></i>
+                  Get in touch
+                </h3>
+
+                <p class="text-secondary small mb-3">
+                  I’m based in Patras, GR. The quickest way to reach me is email or LinkedIn.
+                </p>
+
+                <div class="d-flex flex-wrap gap-2" role="group" aria-label="Contact options">
+                  <!-- Email (pre-filled) -->
+                  <a
+                    href="mailto:kwnstantinoosdritsas@gmail.com?subject=Hello%20Konstantinos%20—%20Portfolio%20contact&body=Hi%20Konstantinos,%0D%0A%0D%0A"
+                    class="btn btn-outline-primary"
+                  >
+                    <i class="fa-sharp fa-solid fa-envelope me-2" aria-hidden="true"></i>
+                    Email
                   </a>
-                </li>
-              </ul>
-            </div>
 
-            <!-- LinkedIn Button ONLY FOR DESKTOP -->
-            <a href="https://www.linkedin.com/in/konstantinos-dritsas-501b57237/"
-                class="btn btn-linkedin d-none d-lg-flex ms-3"
-                target="_blank"
-                rel="noopener noreferrer"
-                aria-label="Visit my LinkedIn profile"
-                title="Visit my LinkedIn">
-              <i class="fab fa-linkedin-in"></i>
-            </a>
-          </div>
-        </nav>
-      </header>
+                  <!-- Copy email -->
+                  <button
+                    type="button"
+                    class="btn btn-outline-light"
+                    id="copyEmailBtn"
+                    data-email="kwnstantinoosdritsas@gmail.com"
+                    data-bs-toggle="tooltip"
+                    data-bs-placement="top"
+                    title="Copy email to clipboard"
+                  >
+                    <i class="fa-sharp fa-solid fa-copy me-2" aria-hidden="true"></i>
+                    Copy email
+                  </button>
 
-      <div id="scrollProgress"></div>
+                  <!-- LinkedIn -->
+                  <a
+                    href="https://www.linkedin.com/in/konstantinos-dritsas-501b57237/"
+                    target="_blank" rel="noopener noreferrer"
+                    class="btn btn-outline-info"
+                  >
+                    <i class="fab fa-linkedin me-2" aria-hidden="true"></i>
+                    LinkedIn
+                  </a>
 
-<!-- First Section -->
-<section class="first-section">
-  <div class="container-fluid">
-    <div class="row justify-content-center align-items-center">
-      <div class="col-md-6">
-        <div class="intro">
-          <p class="fs-5 ">Hello!, I am</p>
-          <h1 class="display-2 fw-bolder mb-4">
-            <span id="typed-dynamic"></span>
-          </h1>
-          <p class="fs-5 mb-5">a Project Manager at PwC Greece and an Undergraduate student <b class="yellow">in the Department of Electrical and Computer Engineering</b> at the University of Peloponnese.</p>
-          <!-- Updated Know More Button -->
-          <a href="#About" class="btn btn-know-more">
-            <i class="fa-sharp fa-solid fa-chevron-down"></i> Know More <i class="fa-sharp fa-solid fa-chevron-down"></i>
-          </a>
-        </div>
-      </div>
-      <!-- Image Column -->
-      <div class="col-12 col-lg-5 text-center">
-        <img src="assets/img/1.png" alt="Konstantinos Dritsas" class="circle-image" width="50%">
-      </div>
-    </div>
-  </div>
+                  <!-- GitHub -->
+                  <a
+                    href="https://github.com/KnstDritsas"
+                    target="_blank" rel="noopener noreferrer"
+                    class="btn btn-outline-light"
+                  >
+                    <i class="fab fa-github me-2" aria-hidden="true"></i>
+                    GitHub
+                  </a>
 
-</section>
-
-<!-- About Me Section -->
-<section class="container-fluid p-5" id="About">
-  <div class="row justify-content-center">
-    <div class="col-md-8 text-center">
-      <h2 class="display-4">About Me</h2>
-      <h3 class="lead">My Introduction</h3>
-      <div class="divider"></div>
-      <p>
-        I am an aspiring <b class="yellow">Electrical and Computer Engineer</b>, currently pursuing my degree at the
-        <b>University of Peloponnese</b>. My academic journey has provided me with a solid foundation in both
-        <b class="yellow">hardware and software</b>, enriched by practical experience in <b>programming</b>,
-        <b>problem-solving</b>, and <b>technical project management</b>.
-      </p>
-      <p>
-        Guided by a commitment to creating meaningful impact, I actively seek opportunities to apply my knowledge in ways that
-        add tangible value to society. As the former <b class="yellow">Vice Chair of the IEEE Student Branch</b> at my university,
-        I led initiatives that encouraged <b>teamwork</b>, fostered <b>professional development</b>, and strengthened the
-        <b>engineering community</b>.
-      </p>
-      <p>
-        I am dedicated to <b class="yellow">continuous learning</b> and staying at the forefront of technological advancements,
-        ensuring I remain adaptable in a rapidly evolving field. My ultimate goal is to leverage my expertise to drive
-        <b class="yellow">innovation</b>, support the university community, and make a lasting, positive impact on society.
-      </p>
-    </div>
-  </div>
-</section>
-
-<!-- Third Section (Qualification) -->
-<section class="container-fluid p-5" id="Qualification">
-  <div class="row justify-content-center">
-    <div class="col-md-10 text-center">
-      <h2 class="display-4">Qualification</h2>
-      <h3 class="lead">My Learning Path</h3>
-      <div class="divider mb-4"></div>
-    </div>
-    <div class="col-md-8">
-      <h3 class="qualification-title">
-        Department of Electrical and Computer Engineering of the University of Peloponnese
-      </h3>
-      <p>
-        As a student of the Department of Electrical and Computer Engineering at the University of Peloponnese, I acquire knowledge and skills in a wide range of sciences and technologies, such as electronics, computer science, telecommunications, and energy. I learn how to analyze, design, implement, and apply systems and solutions that enhance quality of life and social welfare. I participate in research and educational programs that enrich me both scientifically and humanistically. I have the opportunity to collaborate with professors and colleagues from different levels and fields.
-      </p>
-      <ul class="row list-unstyled qualification-details">
-        <li class="col-md-4 col-sm-12 detail-box">
-          <div class="icon-box">
-            <i class="fas fa-calendar-alt"></i>
-          </div>
-          <div class="detail-content">
-            <span class="detail-label">Start Date</span>
-            <span class="detail-value">October, 2020</span>
-          </div>
-        </li>
-
-        <li class="col-md-4 col-sm-12 detail-box">
-          <div class="icon-box">
-            <i class="fas fa-hourglass-half"></i>
-          </div>
-          <div class="detail-content">
-            <span class="detail-label">End Date</span>
-            <span class="detail-value">In progress ⏳</span>
-          </div>
-        </li>
-
-        <li class="col-md-4 col-sm-12 detail-box">
-          <div class="icon-box">
-            <i class="fas fa-map-marker-alt"></i>
-          </div>
-          <div class="detail-content">
-            <span class="detail-label">Location</span>
-            <span class="detail-value">Patras, Greece</span>
-          </div>
-        </li>
-      </ul>
-    </div>
-  </div>
-</section>
-
-<!-- Quarter Section (Skills) -->
-<section class="container-fluid text-white p-5" id="Skills">
-  <div class="sparkles-container"></div>
-  <div class="row justify-content-center">
-    <div class="col-md-8 text-center">
-      <h2 class="display-4">Skills</h2>
-      <h3 class="lead">Knowledge level: Intermediate Low</h3>
-      <div class="container-fluid p-3"></div>
-      <br>
-
-      <div class="row">
-        <!-- Frontend Skills -->
-        <div class="col-md-4">
-          <h3 class="front">Frontend</h3>
-          <ul class="list-group">
-            <li class="list-group-item">
-              <i class="fab fa-html5"></i>
-              <span>HTML</span>
-              <div class="progresss">
-                <div class="progresss-bar bg-success" style="width:75%"></div>
+                <div id="copyEmailStatus" class="visually-hidden" aria-live="polite"></div>
               </div>
-            </li>
-            <li class="list-group-item">
-              <i class="fab fa-css3-alt"></i>
-              <span>CSS</span>
-              <div class="progresss">
-                <div class="progresss-bar bg-info" style="width:35%"></div>
-              </div>
-            </li>
-            <li class="list-group-item">
-              <i class="fab fa-js-square"></i>
-              <span>JavaScript</span>
-              <div class="progresss">
-                <div class="progresss-bar bg-warning" style="width:5%"></div>
-              </div>
-            </li>
-            <li class="list-group-item">
-              <i class="fab fa-bootstrap"></i>
-              <span>Bootstrap</span>
-              <div class="progresss">
-                <div class="progresss-bar bg-primary" style="width:40%"></div>
-              </div>
-            </li>
-          </ul>
-        </div>
-
-        <!-- Backend Skills -->
-        <div class="col-md-4">
-          <h3 class="front">Backend</h3>
-          <ul class="list-group">
-            <li class="list-group-item">
-              <i class="fab fa-python"></i>
-              <span>Python</span>
-              <div class="progresss">
-                <div class="progresss-bar bg-success" style="width:30%"></div>
-              </div>
-            </li>
-            <li class="list-group-item">
-              <i class="fas fa-database"></i>
-              <span>SQL/MySQLi</span>
-              <div class="progresss">
-                <div class="progresss-bar bg-info" style="width:20%"></div>
-              </div>
-            </li>
-            <li class="list-group-item">
-              <i class="fas fa-server"></i>
-              <span>MongoDB</span>
-              <div class="progresss">
-                <div class="progresss-bar bg-warning" style="width:10%"></div>
-              </div>
-            </li>
-            <li class="list-group-item">
-              <i class="fas fa-superscript"></i>
-              <span>Matlab</span>
-              <div class="progresss">
-                <div class="progresss-bar bg-success" style="width:30%"></div>
-              </div>
-            </li>
-          </ul>
-        </div>
-
-        <!-- Other Skills -->
-        <div class="col-md-4">
-          <h3 class="front">Other</h3>
-          <ul class="list-group">
-            <li class="list-group-item">
-              <i class="fas fa-code-branch"></i>
-              <span>GitHub</span>
-              <div class="progresss">
-                <div class="progresss-bar bg-success" style="width:15%"></div>
-              </div>
-            </li>
-            <li class="list-group-item">
-              <i class="fas fa-book"></i>
-              <span>Jupyter Notebook</span>
-              <div class="progresss">
-                <div class="progresss-bar bg-success" style="width:60%"></div>
-              </div>
-            </li>
-            <li class="list-group-item">
-              <i class="fas fa-chart-bar"></i>
-              <span>PowerBI</span>
-              <div class="progresss">
-                <div class="progresss-bar bg-success" style="width:40%"></div>
-              </div>
-            </li>
-          </ul>
-        </div>
-      </div>
-
-      <div class="mb-4 text-center">
-        <small class="d-block text-muted mb-2">Skill Level</small>
-        <div style="display: flex; justify-content: center; gap: 15px; flex-wrap: wrap;">
-          <span style="color: #28a745;"><i class="fas fa-square"></i> High</span>
-          <span style="color: #ffc107;"><i class="fas fa-square"></i> Medium</span>
-          <span style="color: #17a2b8;"><i class="fas fa-square"></i> Low</span>
-          <span style="color: #dc3545;"><i class="fas fa-square"></i> Beginner</span>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-
-    <!-- Fifth Section (Projects)-->
-    <section id="Projects" class="container-fluid py-5">
-      <div class="container text-center">
-        <h2 class="display-4">Projects</h2>
-        <p class="lead mb-5">Showcasing my completed and ongoing work</p>
-
-        <div class="row g-4">
-          <!-- Project Card 1 -->
-          <div class="col-md-4">
-            <div class="project-card">
-              <i class="fab fa-python project-icon"></i>
-              <h5 class="project-title">Personal Voice Assistant</h5>
-              <p class="project-overview">
-                A user-friendly digital assistant designed to respond to voice commands in Greek, combining advanced technology for real-time assistance.
-              </p>
-              <div class="progress">
-                <div class="progress-bar in-progress" style="width: 85%;"></div>
-              </div>
-              <button class="btn btn-secondary" disabled>Coming Soon</button>
             </div>
           </div>
+        </section>
 
-          <!-- Project Card 2 -->
-          <div class="col-md-4">
-            <div class="project-card">
-              <i class="fa-sharp fa-solid fa-sensor project-icon"></i>
-              <h5 class="project-title">IoT Generative Music</h5>
-              <p class="project-overview">
-                An innovative project using Raspberry Pi-4, Weather API, and MongoDB to create music from weather data.
-              </p>
-              <div class="progress">
-                <div class="progress-bar early" style="width: 5%;"></div>
-              </div>
-              <button class="btn btn-secondary" disabled>Coming Soon</button>
-            </div>
-          </div>
 
-          <!-- Project Card 3 -->
-          <div class="col-md-4">
-            <div class="project-card">
-              <i class="fa-solid fa-circle-dot project-icon"></i>
-              <h5 class="project-title">Crimes in London InsightHub</h5>
-              <p class="project-overview">
-                Data visualization and synthesis using PowerBI for crime trends in London with forecasting capabilities.
-              </p>
-              <div class="progress">
-                <div class="progress-bar complete" style="width: 100%;"></div>
-              </div>
-              <button class="btn btn-secondary" disabled>Coming Soon</button>
-            </div>
-          </div>
-        </div>
-      </div>
+        <footer class="footer small text-center mt-4">© 2025 Konstantinos Dritsas. All rights reserved.</footer>
+      </main>
     </section>
+  </div>
 
-    <!-- Fourth Section (Work Experience)-->
-    <section class="container-fluid p-5" id="WorkExperience">
-    <h2 class="display-4 text-center mb-4">Career Highlights</h2>
-    <p class="lead text-center mb-5">Key Achievements and Professional Milestones</p>
-          <div class="timeline">
-            <!-- Experience 1 -->
-            <div class="timeline-event">
-              <div class="timeline-dot"></div>
-              <div class="timeline-content">
-                <h3>PwC Greece</h3>
-                <p class="timeline-date"><strong>Sept 2024 - Feb 2025:</strong> Information Technology Project Manager (Internship)</p>
-              </div>
-            </div>
+  <noscript><div class="alert alert-warning m-3">JavaScript is disabled. Theme toggle is limited.</div></noscript>
 
-            <!-- Experience 2 -->
-            <div class="timeline-event">
-              <div class="timeline-dot"></div>
-              <div class="timeline-content">
-                <h3>PwC Greece</h3>
-                <p class="timeline-date"><strong>March 2025 - Present:</strong> Information Technology Project Manager (Associate)</p>
-              </div>
-            </div>
-      </section>
-
-    <!-- Sixth Section (Volunteering)-->
-      <section class="container-fluid p-5" id="Volunteering">
-        <h2 class="display-4 text-center mb-4">My Volunteering Journey</h2>
-        <p class="lead text-center mb-5">A Journey in Volunteering and Organizational Leadership</p>
-
-        <div class="timeline">
-          <!-- Event 1 -->
-          <div class="timeline-event">
-            <div class="timeline-dot"></div>
-            <div class="timeline-content">
-              <h3>Department ECE, University of Peloponnese</h3>
-              <p class="timeline-date"><strong>Sept 2021 - Present:</strong> Volunteering</p>
-              <ul>
-                <li>Supported Freshers’ Welcome Ceremony, Researcher’s Day, and Career Day.</li>
-                <li>Organized "Smart Cities" Summer School as part of IEEE.</li>
-              </ul>
-            </div>
-          </div>
-
-          <!-- Event 2 -->
-          <div class="timeline-event">
-            <div class="timeline-dot"></div>
-            <div class="timeline-content">
-              <h3>IEEE SB University of Peloponnese-Patras</h3>
-              <p class="timeline-date"><strong>May 2022 - Nov 2022:</strong> Founding Member</p>
-              <p>Established organizational structure, drafted constitution, and conducted team bonding activities.</p>
-              <p class="timeline-date"><strong>Nov 2022 - Aug 2024:</strong> Vice Chair</p>
-              <p>Enhanced online presence, organized activities, and created the branch website.</p>
-              <p class="timeline-date"><strong>May 2023 - June 2023:</strong> Organizer</p>
-              <p>Organized and delivered the inaugural Summer School on AI and Machine Learning.</p>
-              <p class="timeline-date"><strong>Dec 2023 - June 2024:</strong> Organizer</p>
-              <p>Organized and launched the inaugural Summer School: "Tech Revolutions in Cybersecurity."</p>
-              <p class="timeline-date"><strong>Sept 2024 - Present:</strong> Executive Coordinator [Honorary]</p>
-              <p>Team leadership and management, coordination of actions, development of tools, and identification of opportunities.</p>
-              <p class="timeline-date"><strong>Project:</strong> Responsible</p>
-              <ul>
-                <li>Non-Profit Website for IEEE Student Branch (University of Peloponnese).</li>
-                <li>Website for Summer School 2024 Event.</li>
-              </ul>
-            </div>
-          </div>
-
-          <!-- Event 3 -->
-          <div class="timeline-event">
-            <div class="timeline-dot"></div>
-            <div class="timeline-content">
-              <h3>IEEE Puzzlers</h3>
-              <p class="timeline-date"><strong>August 2023 - Present:</strong> Contributing to the IEEE Puzzlers Group</p>
-              <p>Contributed to puzzle-solving activities and ensured a seamless experience for members by addressing issues proactively.</p>
-            </div>
-          </div>
-
-          <!-- Event 4 -->
-        </div>
-      </section>
-
-      <!-- Seventh Section (Footer)-->
-      <section class="container-fluid text-white p-5" id="Contact">
-        <div class="row">
-          <div class="col-lg-6 col-md-8 mx-auto">
-            <h2 class="display-4">Contact Me</h2>
-            <p class="text-center">You can reach me by email, LinkedIn or GitHub.</p>
-            <div class="d-flex justify-content-center">
-              <a href="mailto:kwnstantinoosdritsas@gmail.com" class="btn btn-outline-primary me-2"><i class="fas fa-envelope"></i> Email</a>
-              <a href="https://www.linkedin.com/in/konstantinos-dritsas-501b57237/" class="btn btn-outline-info me-2"><i class="fab fa-linkedin"></i> LinkedIn</a>
-              <a href="https://github.com/KnstDritsas" class="btn btn-outline-light"><i class="fab fa-github"></i> GitHub</a>
-            </div>
-            <br>
-          </div>
-          <p class="text-center">© 2024 Konstantinos Dritsas. All rights reserved.</p>
-      </section>
-
-      <script src="assets/script.js"></script>
-      <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
-      <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
-      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
-      <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
-
-    </body>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" crossorigin="anonymous" defer></script>
+  <script src="assets/script.js" defer></script>
+</body>
 </html>
